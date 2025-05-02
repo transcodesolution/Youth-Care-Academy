@@ -12,6 +12,10 @@ tailwind.config = {
           600: '#707070',     // Medium gray used in titles, labels, paragraphs
           800: '#4D4D4D',       // Background for header and footer
         },
+        green: {
+          500: '#5F9287',  // base color 
+        },
+
       },
       container: {
         center: true,
@@ -22,7 +26,7 @@ tailwind.config = {
         },
       },
       boxShadow: {
-        card: '0 4px 16px rgba(0, 0, 0, 0.05)',
+        card: '0 0 10px 0 rgba(0, 0, 0, 0.1)', // X: 0, Y: 0, Blur: 10, Spread: 0, Color: rgba(0, 0, 0, 0.1)
       },
     },
   },

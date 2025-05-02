@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth Care Academy - Course Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="bg-gray-800 text-white py-2 hidden lg:block">
+    <div class="container mx-auto px-4 flex justify-between items-center text-base">
+       <a href="tel: 0854556677" class="text-xl">085 - 4556677</a>
+        <div class="relative hidden md:block">
+          <input type="text"
+            class="pl-3 pr-10 py-[5px] rounded-md  focus:outline-none w-96">
+          <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 w-5 h-5"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+      <div class="space-x-10 md:flex">
+        <a href="#" class="text-xl">Docenten</a>
+        <a href="#" class="text-xl">Over</a>
+        <a href="#" class="text-xl">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="bg-white shadow-md">
+    <div class="container flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="./assets/images/header/logo.png" alt="Logo" class="md:w-auto w-40">
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex space-x-9 text-gray-600 text-base">
+        <a href="#" class="text-xl">Cursussen</a>
+        <a href="#" class="text-xl">In company</a>
+        <a href="#" class="text-xl">Leslocatie</a>
+        <a href="#" class="text-xl">Nieuws</a>
+        <a href="#" class="text-xl">Inschrijven</a>
+      </nav>
+
+      <!-- Mobile Toggle + Icons -->
+      <div class="lg:hidden flex items-center gap-4">
+        <button aria-label="phone">
+      <svg class="text-gray-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.72-1.72a2 2 0 0 1 2.11-.45c.76.24 1.55.42 2.36.54A2 2 0 0 1 22 16.92z"/>
+            </svg>
+
+        </button>
+        <button aria-label="search">
+          <svg class="text-gray-800"  width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+          </svg>
+        </button>
+        <button id="menuToggle" class="bg-primary text-white px-3 py-1 rounded-lg font-bold">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="lg:hidden hidden fixed inset-0 bg-white z-50 p-6 overflow-y-auto">
+    <div class="flex justify-end items-center mb-6">
+      <button id="menuClose" class="text-gray-800 text-4xl">&times;</button>
+    </div>
+       <ul class="mt-10 space-y-4 text-gray-800 mb-10">
+          <li><a href="#" class="text-xl font-bold">Cursussen</a></li>
+                <li><a href="/employees.html" class="font-bold text-primaryBlack font-sans text-xl">Doelgroep</a></li>
+                <li><a href="#" class="text-xl font-bold">In company</a></li>
+                <li><a href="#" class="text-xl font-bold">Leslocatie</a></li>
+                <li> <a href="#" class="text-xl font-bold">Nieuws</a></li>
+                <li> <a href="#" class="text-xl font-bold">Inschrijven</a></li>
+      </ul>
+      <hr>
+        <ul class="mt-10 space-y-4 text-gray-800">
+          <li><a href="#" class="text-base">Docenten</a></li>
+          <li><a href="#" class="text-base">Over</a></li>
+          <li><a href="#" class="text-base">Contact</a></li>
+        </ul>
+    </div>
+  </div>
+
+<section class="pb-16">
+  <!-- Image -->
+    <img src="./assets/images/courses/details-banner-img.png" alt="Cursusoverzicht" class="w-full h-[424px] object-cover">
+    <!-- Content -->
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Left Content -->
+        <div class="lg:col-span-2 bg-white shadow-card p-10 rounded-tl-lg rounded-tr-3xl rounded-br-lg -mt-32">
+         <h1 class="md:text-5xl text-2xl font-medium italic text-gray-800 mb-4">Basiscursus CGT (Cognitieve Gedragstherapie)</h1>
+          <p class="text-gray-800 mb-2 text-xl">
+            10 lesdagen
+          </p>
+          <div class="flex mt-0.5 gap-2">
+             <span class="text-primary text-base font-bold">(4.8)</span>
+            <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg>
+            <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg>
+             <span class="text-primary text-base font-bold">(21)</span>
+          </div>
+
+           <ul class="text-gray-800 font-bold text-base md:text-2xl  my-4">
+            <li class="flex items-center">
+              <svg class="text-gray-800 mr-2" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+                 Kwalitatief sterk
+            </li>
+            <li class="flex items-start">
+              <svg class="text-gray-800 mr-2" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+                 Didactisch goed opgezet met e-learning vol met <br/> demonstraties, casuïstiek en oefenmateriaal
+            </li>
+            <li class="flex items-center">
+              <svg class="text-gray-800 mr-2" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+             Maar' 10 lesdagen plus veel e-learning
+            </li>
+          </ul>
+          <!-- Pricing Section -->
+         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 mt-8">
+            <!-- Card 1 -->
+            <div class="bg-gray-100 rounded-tr-2xl rounded-tl-lg rounded-bl-lg border border-gray-800">
+              <div class="px-4 pt-4">
+                <div class="flex justify-between mb-4">
+                  <p class="text-sm font-bold text-gray-800">28 september 2025</p>
+                  <p class="text-sm font-bold text-gray-800">Utrecht</p>
+                </div>
+                <p class="text-3xl font-bold text-gray-800 mb-4">€ 2725</p>
+              </div>
+                    <a href="#" class="flex text-center justify-center text-white bg-primary px-4 py-1 rounded-tr-xl text-lg w-fit mb-2">
+                        Inschrijven
+                        <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                      <div class="px-4 pb-2">
+                        <a href="#" class="text-sm font-light text-gray-800 no-underline flex items-center">
+                          Praktische cursusinformatie
+                       <svg class="text-gray-800" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 6L15 12L9 18" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        </a>
+                      </div>
+            </div>
+            <div class="bg-gray-100 rounded-tr-2xl rounded-tl-lg rounded-bl-lg border border-gray-800">
+              <div class="px-4 pt-4">
+                <div class="flex justify-between mb-4">
+                  <p class="text-sm font-bold text-gray-800">28 september 2025</p>
+                  <p class="text-sm font-bold text-gray-800">Utrecht</p>
+                </div>
+                <p class="text-3xl font-bold text-gray-800 mb-4">€ 2725</p>
+              </div>
+                    <a href="#" class="flex text-center justify-center text-white bg-primary px-4 py-1 rounded-tr-xl text-lg w-fit mb-2">
+                        Inschrijven
+                        <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                      <div class="px-4 pb-2">
+                        <a href="#" class="text-sm font-light text-gray-800 no-underline flex items-center">
+                          Praktische cursusinformatie
+                       <svg class="text-gray-800" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 6L15 12L9 18" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        </a>
+                      </div>
+            </div>
+            <div class="bg-gray-100 rounded-tr-2xl rounded-tl-lg rounded-bl-lg border border-gray-800">
+              <div class="px-4 pt-4">
+                <div class="flex justify-between mb-4">
+                  <p class="text-sm font-bold text-gray-800">28 september 2025</p>
+                  <p class="text-sm font-bold text-gray-800">Utrecht</p>
+                </div>
+                <p class="text-3xl font-bold text-gray-800 mb-4">€ 2725</p>
+              </div>
+                    <a href="#" class="flex text-center justify-center text-white bg-primary px-4 py-1 rounded-tr-xl text-lg w-fit mb-2">
+                        Inschrijven
+                        <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                      <div class="px-4 pb-2">
+                        <a href="#" class="text-sm font-light text-gray-800 no-underline flex items-center">
+                          Praktische cursusinformatie
+                       <svg class="text-gray-800" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 6L15 12L9 18" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        </a>
+                      </div>
+            </div>
+          </div>
+
+          <!-- Course Content -->
+          <h2 class="text-xl md:text-3xl font-bold text-gray-800 mb-4">Inhoud</h2>
+          <p class="text-gray-800 text-xl font-normal mb-6">
+          De cursisten worden geacht aan het eind van deze inleidende basiscursus cgt voldoende thuis te zijn in de leertheoretische principes, zodat zij deze kunnen herkennen in de problematiek van de cliënt. Zij kunnen de informatie over de problematiek ordenen en weergeven in een holistische theorie. Met behulp van functie- en betekenisanalyses kunnen zij een gefundeerde probleemkeuze maken en een behandelplan opstellen. De cursisten worden vertrouwd gemaakt met het cognitief-gedragstherapeutisch proces en kunnen een casusconceptualisatie opzetten aan de hand van deze fasen. Tevens leren de cursisten in deze cursus enkele cgt basisinterventies en de socratische dialoog toe te passen.
+          <br /><br />
+          Deze basiscursus CGt vormt de basis voor de opleiding tot cognitief gedragstherapeut en is speciaal ontwikkeld voor cursisten die met kinderen en jeugdigen werken. Filmmateriaal en casusvoorbeelden zijn zowel op volwassenen als op kinderen en jeugdigen gebaseerd. Veel aandacht wordt besteed aan het oefenen van de leertheoretische technieken, waarbij gestart wordt met de oorspronkelijke doelgroep (volwassenen) en daarna wordt de specifieke toepassing daarvan bij kinderen, jeugdigen en gezinnen besproken. De fasen van het gedragstherapeutisch proces vormen de leidraad voor deze cgt basiscursus.
+          </p>
+
+          <!-- Learning Objectives -->
+          <h2 class="text-xl md:text-3xl font-bold text-gray-800 my-8">Onderwerpen inleidende deel van basiscursus CGT</h2>
+          <ul class="list-disc pl-5 text-gray-800 space-y-2 text-xl font-normal mb-6 ml-4">
+            <li>Kennis van het cognitief gedragstherapeutisch proces.</li>
+            <li>Leer- en emotietheorie relevant voor de klinische praktijk, inclusief klassieke en operante conditionering en het cognitieve model.</li>
+            <li>Cognitief gedragstherapeutische diagnostiek en het opstellen van een verklarend model.</li>
+            <li>Toepassen van de socratische dialoog en motiverende gespreksvoering.</li>
+            <li>Opbouwen van een adequate therapeutische werkrelatie.</li>
+            <li>Ontwerpen van behandelplannen op basis van cognitief gedragstherapeutische diagnostiek.</li>
+          </ul>
+
+          <h2 class="text-xl md:text-3xl font-bold text-gray-800 mt-8 mb-4">Onderwerpen inleidende deel van basiscursus CGT</h2>
+          <ul class="list-disc pl-5 text-gray-800 space-y-2 text-xl font-normal mb-6 ml-4">
+            <li>Kennis van het cognitief gedragstherapeutisch proces.</li>
+            <li>Leer- en emotietheorie relevant voor de klinische praktijk, inclusief klassieke en operante conditionering en het cognitieve model.</li>
+            <li>Cognitief gedragstherapeutische diagnostiek en het opstellen van een verklarend model.</li>
+            <li>Toepassen van de socratische dialoog en motiverende gespreksvoering.</li>
+            <li>Opbouwen van een adequate therapeutische werkrelatie.</li>
+            <li>Ontwerpen van behandelplannen op basis van cognitief gedragstherapeutische diagnostiek.</li>
+          </ul>
+
+          <h2 class="text-xl md:text-3xl font-bold  my-8">Leerdoelen</h2>
+          <ul class="list-disc pl-5 text-gray-800 text-xl font-normalspace-y-2 mb-6 ml-4">
+            <li>Basis competenties van de cognitief gedragstherapeut met betrekking tot kennis en vaardigheden</li>
+            <li>Basiskennis over de leertheorieën, de geschiedenis van de gedragstherapie en het gedragstherapeutisch proces</li>
+            <li>Gegevens over de problematiek van de cliënt ordenen in en holistische visie of probleemsamenhang en gefundeerd tot een probleemkeuze komen (algemeen en stoornisspecifiek)</li>
+            <li>Een topografische, functie- en betekenisanalyse opstellen van het probleemgedrag en registratieopdrachten bepalen (algemeen en stoornisspecifiek)</li>
+            <li>Op grond van diagnostiek en indicatiestelling een individueel behandelplan opstellen voor enkelvoudige, lichte problematiek en dit bespreken met cliënt en gezin (algemeen en stoornisspecifiek)</li>
+            <li>Een kennismakingsgesprek voeren, invoegen en informatie verzamelen (algemeen en stoornisspecifiek)</li>
+            <li>Kennis hebben over de operante en niet-operante technieken in de kinder- en jeugdsetting</li>
+            <li>Kennis hebben en begrijpen van het inzetten van de socratische dialoog als middel binnen de cognitieve gedragstherapie</li>
+            <li>Kennis hebben over de ontwikkelingen binnen de CGT als het gaat over de derde generatie CGT</li>
+          </ul>
+          <h2 class="text-xl  font-bold text-gray-800 my-6">Leerdoelen van het verdiepende deel van de basiscursus CGt</h2>
+          <ul class="list-disc pl-5 text-gray-800 text-xl font-normalspace-y-2 mb-6 ml-4">
+            <li>Basis competenties van de cognitief gedragstherapeut met betrekking tot kennis en vaardigheden</li>
+            <li>Basiskennis over de leertheorieën, de geschiedenis van de gedragstherapie en het gedragstherapeutisch proces</li>
+            <li>Gegevens over de problematiek van de cliënt ordenen in en holistische visie of probleemsamenhang en gefundeerd tot een probleemkeuze komen (algemeen en stoornisspecifiek)</li>
+            <li>Een topografische, functie- en betekenisanalyse opstellen van het probleemgedrag en registratieopdrachten bepalen (algemeen en stoornisspecifiek)</li>
+            <li>Op grond van diagnostiek en indicatiestelling een individueel behandelplan opstellen voor enkelvoudige, lichte problematiek en dit bespreken met cliënt en gezin (algemeen en stoornisspecifiek)</li>
+            <li>Een kennismakingsgesprek voeren, invoegen en informatie verzamelen (algemeen en stoornisspecifiek)</li>
+            <li>Kennis hebben over de operante en niet-operante technieken in de kinder- en jeugdsetting</li>
+            <li>Kennis hebben en begrijpen van het inzetten van de socratische dialoog als middel binnen de cognitieve gedragstherapie</li>
+            <li>Kennis hebben over de ontwikkelingen binnen de CGT als het gaat over de derde generatie CGT</li>
+          </ul>
+          <h2 class="text-xl  font-bold text-gray-800 my-6">Specifieke competenties met betrekking tot kennis over diverse stoornissen</h2>
+          <ul class="list-disc pl-5 text-gray-800 text-xl font-normalspace-y-2 mb-6 ml-4">
+            <li>Basiskennis en leertheoretische principes over angststoornissen</li>
+            <li>Basiskennis en leertheoretische principes over angststoornissen</li>
+            <li>Basiskennis en leertheoretische principes over trauma</li>
+            <li>Basiskennis en leertheoretische principes over obsessieve-compulsieve stoornis</li>
+            <li>Basiskennis en leertheoretische principes over gedragsstoornissen</li>
+          </ul>
+          <h2 class="text-xl  font-bold text-gray-800 my-6">In deze basiscursus CGt leer je ook specifieke competenties met betrekking tot therapeutische vaardigheden</h2>
+          <ul class="list-disc pl-5 text-gray-800 text-xl font-normalspace-y-2 mb-6 ml-4">
+              <li>Algemene gedragstherapeutische attitude: kan directiviteit en trainersattitude toepassen, rollenspel met cliënt opzetten en vaardigheden trainen.</li>
+              <li>Algemene cognitief gedragstherapeutische attitude: kan attitude van empirisch collaborisme toepassen en socratische dialoog uitvoeren.</li>
+              <li>Operante principes toepassen tijdens gespreksvoering (individueel, gezin en groep), via bekrachtigingsprogramma’s en via mediatietherapie.</li>
+              <li>Zelfcontroletechnieken toepassen en aanleren.</li>
+              <li>Ontspanningstechnieken toepassen en aanleren.</li>
+              <li>Probleemoplossingstechnieken toepassen.</li>
+              <li>Exposureprogramma bij angststoornissen en gedragsactivatie bij stemmingsstoornissen (socratisch) uitleggen en programma en oefeningen stapsgewijs opstellen en (begeleid) uitvoeren.</li>
+              <li>Specifieke cognitieve technieken toepassen zoals kansberekening, verantwoordelijkheidstaart, rampenschaal, meer dimensioneel evalueren, gedragsexperiment en denkfouten.</li>
+              <li>Basale gedragstherapeutische verwerkingstechnieken toepassen zoals contraconditionering en schrijftherapie.</li>
+              <li>Emotiegerichte technieken zoals toegepast bij trauma.</li>
+          </ul>
+           <h2 class="text-xl md:text-3xl font-bold mb-4"> <h2 class="text-xl md:text-3xl font-bold text-gray-800 mb-4">Inhoud</h2>
+          <p class="text-gray-800 text-xl font-normal mb-6">
+        In deze basiscursus CGt ligt het accent op de technische en theoretische principes van de gedragstherapie. De cursusonderdelen zijn praktijkgericht en er wordt veel gewerkt met demonstraties, rollenspellen en oefeningen. De cursisten leren om zowel de technieken (en vaardigheden) te kunnen toepassen alsook een goede therapeutische attitude en relatie te kunnen hanteren. Er wordt van de cursisten verwacht dat zij opdrachten kunnen uitvoeren in de praktijk en daarover kunnen rapporteren (casuïstiek-inbreng) tijdens de cursusbijeenkomsten.
+          <br /><br />
+         Door het opzetten van een cognitieve casusconceptualisatie voor een eigen cliënt worden de cursisten snel wegwijs in de eerste fasen van het gedragstherapeutisch proces. Bij deze basiscursus CGt wordt bij iedere bijeenkomst aandacht besteed aan de verschillende onderdelen van de casusconceptualisatie. Door het observeren van het gedrag, het uitvragen van de klacht, het maken van analysen en het omschrijven van behandelingsdoelen en de daarbij behorende behandelingstechnieken wordt inzicht gegeven in het proces dat iedere therapeut meemaakt. Gezien het korte tijdsbestek waarin dit proces plaatsvindt, betekent dat het leereffect een aanzet geeft tot beginnend inzicht in het gedragstherapeutisch handelen.
+          </p></h2>
+          <p class="text-gray-800 text-xl font-normal mb-6">
+          Deze basiscursus CGt is bijzonder omdat er 10 lesdagen zijn en veel e-learning waardoor cursisten meer in eigen tijd en tempo de theorie eigen kunnen maken, waarbij er veel gelegenheid is tot inoefening middels afwisselende opdrachten. De cursus is daardoor flexibeler dan de meeste basiscursussen. De vele filmpjes met presentaties, demonstraties en casuïstiek kunnen naar behoefte herhaald bekeken worden. Dit bevordert het intrainen en automatiseren van de theorie en het ‘onder de knie’ krijgen van de analyses en de verschillende fasen van het gedragstherapeutisch proces. Deze basiscursus bestaat uit 65% livecursus en 35% e-learning.
+          <br /><br />
+        Inhoudelijk is er een onderscheid gemaakt tussen de verplichte basisstof en de verdiepingsstof. Dat biedt cursisten die daar behoefte aan hebben, de mogelijkheid extra te kunnen oefenen en zichzelf uit te dagen met complexere casuïstiek.
+        <br/> <br/>
+        De basiscursus CGt is opgedeeld in modules. Voordat er een live cursusbijeenkomst plaatsvindt, hebben de cursisten de e-learning modules doorlopen en de bijbehorende opdrachten gemaakt. In de live cursusbijeenkomsten ligt de nadruk op het trainen van vaardigheden middels rollenspelen en ervaringsoefeningen. Ook is er in deze bijeenkomsten ruimschoots gelegenheid tot het stellen van vragen, interactieve discussies en het nabespreken van opdrachten die in de e-learning gemaakt zijn. Omdat de cursisten via de e-learning al de theoretische kennis hebben opgedaan, kan de tijd tijdens de live bijeenkomsten optimaal besteed worden aan praktische oefening.
+        <br/> <br/>
+        <b>Studiebelasting</b>
+        <br/> <br/>
+        Studiebelasting is in totaal 350 uur, dat is inclusief het lezen van literatuur, de huiswerkopdrachten en de eindcasus. De elearning is 35 uur.
+        <b>Toetsing</b>
+        <br/><br/>
+        Onder andere een eindopdracht in de vorm van een casusbeschrijving.
+          </p>
+        <h2 class="text-xl md:text-3xl  font-bold my-6">Zelf aan te schaffen literatuur</h2>
+          <ul class="list-disc pl-5 text-gray-800 text-xl font-normalspace-y-2 mb-6 ml-4">
+            <li>J.M. Cladder, M.W.D. Nijhoff-Huijsse, G.A.L.A. Mulder: Cognitieve gedragstherapie met kinderen en jeugdigen -oplossingsgericht, protocollair en specialistisch- 8e editie 1e druk oktober 2019 ISBN 9789043036757</li>
+            <li>K. Korrelboom/E. ten Broeke: Geïntegreerde cognitieve gedragstherapie: Tweede herziene druk, 2014, ISBN 9789046903810</li>
+            <li>P. Prins, J.D. Bosch, C. Braet: Methoden en technieken van gedragstherapie bij kinderen en jeugdigen. Derde herziene druk, 2018. ISBN 9789036819718 (ook als ebook verkrijgbaar)</li>
+            <li>Braet, C. & Bogels, S. (2020). Protocollaire behandelingen voor kinderen met psychische klachten deel 3. Amsterdam: Boom. ISBN 9789024408917</li>
+            <li>D. Hermans, F. Raes, H. Orlemans; Inleiding tot de gedragstherapie: zevende, herziene druk, 2018 ISBN 9789036819503</li>
+            <li>Bögels, S.M & Oppen, P. van (2019) Cognitieve therapie: theorie en praktijk. derde, geheel herziene druk. ISBN 9789036820202</li>
+            <li>Keijzers, Van Minnen, Verbraak, Hoogduin & Emmelkamp (red) (2017) Protocollaire behandelingen voor volwassenen met psychische klachten deel 1 en deel 2. ISBN deel 1: 9789089537133. ISBN deel 2: 9789089537140</li>
+          </ul>
+
+             <h2 class="text-xl md:text-3xl  font-bold my-6">Toelatingseisen basiscursus CGt</h2>
+             <p class="text-gray-800 text-xl font-normal mb-6">Master psychologie of orthopedagogiek</p>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="mt-6">
+           <a href="#" class="flex mb-6 text-center justify-center text-primary border border-primary px-4 py-2 rounded-tr-lg text-lg w-full">
+              Incompany aanvragen
+            <svg class="text-primary ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+            <a href="#" class="text-primary underline mx-auto  flex justify-center">Nieuwe cursusdata</a>
+          <h2 class="text-xl md:text-3xl font-bold text-gray-800 mt-8 my-6">Vervolgcursussen</h2>
+          <div class="space-y-4">
+            <div class="bg-gray-100 rounded-t-lg ">
+            <div class="relative">
+              <img src="./assets/images/courses/course-image.png" alt="Course Image"  class="w-full object-cover bg-gray-100 ">
+              <a href="#" class="text-white bg-primary px-8 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-xl w-fit absolute top-6 left-6 z-1">
+                Verdiepingscursus
+              </a>
+            </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">(Gehechtheid) trauma en huiselijk 
+geweld  </h3>
+          <p class="text-gray-800 leading-7 text-base mb-4">
+            In deze training worden kennis en vaardigheden op het gebied van gehechtheid en trauma vertaald naar het werken bij Veilig Thuis.
+          </p>
+          <div class="flex mt-0.5 gap-2">
+            <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg>
+            <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg>
+             <span class="text-gray-800 text-xl">(21)</span>
+          </div>
+          <p class="text-gray-600 text-sm my-4">14 dagen (iedere week op Din & Woe)</p>
+        </div>
+          <a href="#" class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit">
+             Informatie en startdata
+            <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+      </div>
+      <div class="bg-gray-100 rounded-t-lg ">
+        <div class="relative">
+          <img src="./assets/images/courses/course-image.png" alt="Course Image"  class="w-full object-cover bg-gray-100 ">
+           <a href="#" class="text-white bg-gray-800 px-8 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-xl w-fit absolute top-6 left-6 z-1">
+            Basisopleiding NIKA
+          </a>
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Traumasensitief werken bij Veilig Thuis</h3>
+          <p class="text-gray-800 leading-7 text-base mb-4">
+            In deze training worden kennis en vaardigheden op het gebied van gehechtheid en trauma vertaald naar het werken bij Veilig Thuis.
+          </p>
+          <div class="flex mt-0.5 gap-2">
+            <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg>
+            <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+                fill="currentColor" />
+            </svg>
+             <span class="text-gray-800 text-xl">(21)</span>
+          </div>
+          <p class="text-gray-600 text-sm my-4">14 dagen (iedere week op Din & Woe)</p>
+        </div>
+          <a href="#" class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit">
+             Informatie en startdata
+            <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+<footer class="bg-gray-800 text-white py-10">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Left Section -->
+    <div>
+      <img src="./assets/images/footer/logo.png" alt="Logo" class="mb-4">
+      <p>De Jeugdzorgacademie</p>
+      <p>Grebbeberglaan 15, 3527 VX Utrecht</p>
+      <p>Lindenstraat 47, 2023 TC Haarlem</p>
+      <p class="mt-8">085 - 4556677</p>
+      <p>info@dejeugdzorgacademie.nl</p>
+    </div>
+
+    <!-- Center Section -->
+    <div>
+      <ul class="space-y-2">
+        <li><a href="#">Cookieverklaring</a></li>
+        <li><a href="#">Algemene voorwaarden</a></li>
+        <li><a href="#">Privacy verklaring</a></li>
+        <li><a href="#">Uitschrijven</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+
+    <div class="flex flex-col justify-between">
+      <div>
+        <a href="#" class="flex justify-center text-center w-fit bg-transparent text-lg font-medium px-9 py-2 border border-white rounded-tr-lg mb-10">
+          Stel een vraag
+             <svg class="text-white ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           </svg>
+           </a>
+
+         <a href="#" >
+           <img src="./assets/images/footer/linkedin-icon.png" alt="LinkedIn" >
+         </a>
+      </div>
+      <p class="mt-10">2021 © De Jeugdzorgacademie</p>
+    </div>
+  </div>
+
+</footer>
+
+  <script src="./tailwind.config.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
