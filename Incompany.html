@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Care Academy - Incompany</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="bg-gray-800 text-white py-2 hidden lg:block">
+    <div class="container mx-auto px-4 flex justify-between items-center text-base">
+      <a href="tel: 0854556677" class="text-xl"> 085 - 4556677</a>
+      <div class="relative hidden md:block">
+        <input type="text" class="pl-3 pr-10 py-[5px] rounded-md  focus:outline-none w-96">
+        <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 w-5 h-5"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+      <div class="space-x-10 md:flex">
+        <a href="#" class="text-xl">Docenten</a>
+        <a href="#" class="text-xl">Over</a>
+        <a href="#" class="text-xl">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="bg-white shadow-md">
+    <div class="container flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="./assets/images/header/logo.png" alt="Logo" class="md:w-auto w-40">
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex space-x-9 text-gray-600 text-base">
+        <a href="#" class="text-xl font-bold">Cursussen</a>
+        <a href="#" class="text-xl font-bold">In company</a>
+        <a href="#" class="text-xl font-bold">Leslocatie</a>
+        <a href="#" class="text-xl font-bold">Nieuws</a>
+        <a href="#" class="text-xl font-bold">Inschrijven</a>
+      </nav>
+
+      <!-- Mobile Toggle + Icons -->
+      <div class="lg:hidden flex items-center gap-4">
+        <button aria-label="phone">
+          <svg class="text-gray-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-phone">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.72-1.72a2 2 0 0 1 2.11-.45c.76.24 1.55.42 2.36.54A2 2 0 0 1 22 16.92z" />
+          </svg>
+
+        </button>
+        <button aria-label="search">
+          <svg class="text-gray-800" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+          </svg>
+        </button>
+        <button id="menuToggle" class="bg-primary text-white px-3 py-1 rounded-lg font-bold">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="lg:hidden hidden fixed inset-0 bg-white z-50 p-6 overflow-y-auto">
+    <div class="flex justify-end items-center mb-6">
+      <button id="menuClose" class="text-gray-800 text-4xl">&times;</button>
+    </div>
+    <ul class="mt-10 space-y-4 text-gray-800 mb-10">
+      <li><a href="#" class="text-xl font-bold">Cursussen</a></li>
+      <li><a href="/employees.html" class="font-bold text-primaryBlack font-sans text-xl">Doelgroep</a></li>
+      <li><a href="#" class="text-xl font-bold">In company</a></li>
+      <li><a href="#" class="text-xl font-bold">Leslocatie</a></li>
+      <li> <a href="#" class="text-xl font-bold">Nieuws</a></li>
+      <li> <a href="#" class="text-xl font-bold">Inschrijven</a></li>
+    </ul>
+    <hr>
+    <ul class="mt-10 space-y-4 text-gray-800">
+      <li><a href="#" class="text-base">Docenten</a></li>
+      <li><a href="#" class="text-base">Over</a></li>
+      <li><a href="#" class="text-base">Contact</a></li>
+    </ul>
+  </div>
+  </div>
+
+  <section class="relative h-[390px] md:h-[621px]">
+    <img src="./assets/images/company/banner-img.png" alt="Banner"
+      class="absolute inset-0 w-full h-full object-cover" />
+    <div class="relative z-10 flex items-center h-full">
+      <div class="container px-6">
+        <div class="text-white max-w-xl mb-4">
+          <p class="uppercase text-xl md:text-3xl font-light">INCOMPANY</p>
+          <h2 class="text-xl md:text-3xl md:text-5xl font-medium italic mb-2">Maatwerk en</h2>
+          <h3 class="text-xl md:text-3xl md:text-5xl font-medium mb-8">relevantie</h3>
+          <a href="#"
+            class="flex justify-center text-center w-fit bg-transparent  text-lg font-medium px-5 py-1 border border-white rounded-tr-xl">
+            Vraag offerte aan
+            <svg class="text-white ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container mx-auto py-4">
+      <h2 class="text-gray-800 text-2xl md:text-3xl xl:text-4xl font-bold mb-8">Waarom kies je voor Incompany?</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-14">
+        <!-- Card 1 -->
+        <div class="border border-primary rounded-tl-xl rounded-tr-3xl rounded-br-xl p-2 px-2 md:p-6  text-center">
+          <h3 class="text-primary text-2xl md:text-3xl xl:text-4xl font-bold text-left">Efficiënte en kostensparing
+          </h3>
+        </div>
+        <!-- Card 2 -->
+        <div class="border border-primary rounded-tl-xl rounded-tr-3xl rounded-br-xl p-2 px-2 md:p-6  text-center">
+          <h3 class="text-primary text-2xl md:text-3xl xl:text-4xl font-bold text-left">Kwaliteit en kennisniveau
+          </h3>
+        </div>
+        <!-- Card 3 -->
+        <div class="border border-primary rounded-tl-xl rounded-tr-3xl rounded-br-xl p-2 px-2 md:p-6  text-center">
+          <h3 class="text-primary text-2xl md:text-3xl xl:text-4xl font-bold text-left">Teamontwikkel en samenwerking
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mx-auto py-4">
+      <h2 class="text-gray-800 text-2xl md:text-3xl xl:text-4xl font-bold mb-8">GGZ ingeest</h2>
+      <h3 class="text-2xl text-gray-800 mb-2  font-bold">Britt Kleinee</h3>
+      <p class="text-gray-800 text-xl italic font-medium mb-5">Charlotte is een zeer kundige en betrokken docente die de
+        lesdagen
+        boeiend
+        kon brengen en veel tools aanbood.
+        De
+        e-learning is ondersteunend met veel voorbeelden uit de praktijk en extra uitleg en de invulling van de
+        live-bijeenkomsten waren nuttig doordat er hoofdzakelijk geoefend wordt en er geen langdradige Powerpoint
+        presentaties
+        aan bod kwamen. Ik raad deze cursus zeker aan anderen aan.</p>
+      <div class="flex mt-0.5 gap-2">
+        <svg width="25" height="25" class="text-gray-800" viewBox="0 0 23 21" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+            fill="currentColor" />
+        </svg>
+        <svg width="25" height="25" class="text-gray-800" viewBox="0 0 23 21" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+            fill="currentColor" />
+        </svg> <svg width="25" height="25" class="text-gray-800" viewBox="0 0 23 21" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+            fill="currentColor" />
+        </svg> <svg width="25" height="25" class="text-gray-800" viewBox="0 0 23 21" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+            fill="currentColor" />
+        </svg> <svg width="25" height="25" class="text-gray-800" viewBox="0 0 23 21" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
+            fill="currentColor" />
+        </svg>
+      </div>
+      <a href="#"
+        class="flex text-center justify-center text-primary border border-primary px-4 py-2 rounded-tr-xl text-lg w-fit mt-10">
+        Bekijk de reviews
+        <svg class="text-primary  ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mx-auto py-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Left Content -->
+        <div class="lg:col-span-2">
+          <h2 class="text-gray-800 text-2xl md:text-3xl xl:text-4xl font-bold mb-8 mt-6">Efficiënte en kostensparing
+          </h2>
+          <p class="text-gray-800 text-xl  mb-5">De cursisten worden geacht aan het eind van deze inleidende basiscursus
+            cgt
+            voldoende thuis te zijn in de
+            leertheoretische principes, zodat zij deze kunnen herkennen in de problematiek van de cliënt. Zij kunnen de
+            informatie
+            over de problematiek ordenen en weergeven in een holistische theorie. Met behulp van functie- en
+            betekenisanalyses
+            kunnen zij een gefundeerde probleemkeuze maken en een behandelplan opstellen. De cursisten worden vertrouwd
+            gemaakt met
+            het cognitief-gedragstherapeutisch proces en kunnen een casusconceptualisatie opzetten aan de hand van deze
+            fasen.
+            Tevens leren de cursisten in deze cursus enkele cgt basisinterventies en de socratische dialoog toe te
+            passen.
+            <br><br>
+            Deze basiscursus CGt vormt de basis voor de opleiding tot cognitief gedragstherapeut en is speciaal
+            ontwikkeld
+            voor
+            cursisten die met kinderen en jeugdigen werken. Filmmateriaal en casusvoorbeelden zijn zowel op volwassenen
+            als
+            op
+            kinderen en jeugdigen gebaseerd. Veel aandacht wordt besteed aan het oefenen van de leertheoretische
+            technieken,
+            waarbij
+            gestart wordt met de oorspronkelijke doelgroep (volwassenen) en daarna wordt de specifieke toepassing
+            daarvan
+            bij
+            kinderen, jeugdigen en gezinnen besproken. De fasen van het gedragstherapeutisch proces vormen de leidraad
+            voor
+            deze cgt
+            basiscursus.
+          </p>
+
+          <h2 class="text-gray-800 text-2xl md:text-3xl xl:text-4xl font-bold mb-8 mt-12">Kwaliteit en kennisniveau</h2>
+          <p class="text-gray-800 text-xl  mb-5">De cursisten worden geacht aan het eind van deze inleidende basiscursus
+            cgt
+            voldoende thuis te zijn in de
+            leertheoretische principes, zodat zij deze kunnen herkennen in de problematiek van de cliënt. Zij kunnen de
+            informatie
+            over de problematiek ordenen en weergeven in een holistische theorie. Met behulp van functie- en
+            betekenisanalyses
+            kunnen zij een gefundeerde probleemkeuze maken en een behandelplan opstellen. De cursisten worden vertrouwd
+            gemaakt met
+            het cognitief-gedragstherapeutisch proces en kunnen een casusconceptualisatie opzetten aan de hand van deze
+            fasen.
+            Tevens leren de cursisten in deze cursus enkele cgt basisinterventies en de socratische dialoog toe te
+            passen.
+            <br><br>
+            Deze basiscursus CGt vormt de basis voor de opleiding tot cognitief gedragstherapeut en is speciaal
+            ontwikkeld
+            voor
+            cursisten die met kinderen en jeugdigen werken. Filmmateriaal en casusvoorbeelden zijn zowel op volwassenen
+            als
+            op
+            kinderen en jeugdigen gebaseerd. Veel aandacht wordt besteed aan het oefenen van de leertheoretische
+            technieken,
+            waarbij
+            gestart wordt met de oorspronkelijke doelgroep (volwassenen) en daarna wordt de specifieke toepassing
+            daarvan
+            bij
+            kinderen, jeugdigen en gezinnen besproken. De fasen van het gedragstherapeutisch proces vormen de leidraad
+            voor
+            deze cgt
+            basiscursus.
+          </p>
+        </div>
+        <div class="mt-6">
+          <div class="bg-gray-100 rounded-tl-xl rounded-tr-3xl rounded-br-xl ">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-primary mb-2">Incompany offerte </h3>
+              <p class="text-gray-800 text-xl my-4 font-normal">Ontvang binnen 24 een offerte
+                op maat in je mailbox.</p>
+              <a href="#"
+                class="flex justify-center text-center w-fit bg-transparent text-primary text-lg font-medium px-5 py-1 border border-primary rounded-tr-xl">
+                Vraag offerte aan
+                <svg class="text-primary ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-10">
+    <div class="container mx-auto">
+      <h2 class="text-primary text-center text-2xl md:text-3xl xl:text-4xl font-bold mb-8">Geregistreerd bij Het CRKBO
+      </h2>
+      <p class="text-center text-xl text-gray-800 my-10">Al onze cursussen zijn geaccrediteerd door het NIP/NVO/SKJ
+        en/of
+        andere beroepsverenigingen
+        <br> zoals de VGCT en de
+        NVRG.
+      </p>
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-center">
+        <img src="./assets/images/home/nvrg-logo.png" alt="Logo nvrg" class="mx-auto">
+        <img src="./assets/images/home/nip-logo.png" alt="Logo nip" class="mx-auto">
+        <img src="./assets/images/home/skj-logo.png" alt="Logo skj" class="mx-auto">
+        <img src="./assets/images/home/r-logog.png" alt="Logo r" class="mx-auto">
+        <img src="./assets//images/home/vgct-logo.png" alt="Logo vgct" class="mx-auto">
+        <img src="./assets/images/home/nvo-logo.png" alt="Logo nvo" class="mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Left Section -->
+      <div>
+        <img src="./assets/images/footer/logo.png" alt="Logo" class="mb-4">
+        <p>De Jeugdzorgacademie</p>
+        <p>Grebbeberglaan 15, 3527 VX Utrecht</p>
+        <p>Lindenstraat 47, 2023 TC Haarlem</p>
+        <p class="mt-8">085 - 4556677</p>
+        <p>info@dejeugdzorgacademie.nl</p>
+      </div>
+
+      <!-- Center Section -->
+      <div>
+        <ul class="space-y-2">
+          <li><a href="#">Cookieverklaring</a></li>
+          <li><a href="#">Algemene voorwaarden</a></li>
+          <li><a href="#">Privacy verklaring</a></li>
+          <li><a href="#">Uitschrijven</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col justify-between">
+        <div>
+          <a href="#"
+            class="flex justify-center text-center w-fit bg-transparent text-lg font-medium px-9 py-2 border border-white rounded-tr-xl mb-10">
+            Stel een vraag
+            <svg class="text-white ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+
+          <a href="#">
+            <img src="./assets/images/footer/linkedin-icon.png" alt="LinkedIn">
+          </a>
+        </div>
+        <p class="mt-10">2021 © De Jeugdzorgacademie</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./tailwind.config.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
