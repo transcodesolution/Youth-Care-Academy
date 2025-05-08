@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Care Academy - Nieuws</title>
+  <link rel="stylesheet" href="./assets/css/global.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="bg-gray-800 text-white py-2 hidden lg:block">
+    <div class="container mx-auto px-4 flex justify-between items-center text-base">
+      <a href="tel: 0854556677" class="text-base"> 085 - 4556677</a>
+      <div class="relative hidden md:block">
+        <input type="text" class="pl-3 pr-10 py-[5px] rounded-md  focus:outline-none w-96">
+        <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 w-5 h-5"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+      <div class="space-x-10 md:flex">
+        <a href="./teachers.html" class="text-base">Docenten</a>
+        <a href="./about.html" class="text-base">Over</a>
+        <a href="#" class="text-base">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="bg-white">
+    <div class="container flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="./assets/images/header/logo.png" alt="Logo" class="md:w-auto w-40">
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex space-x-9 text-gray-600 text-base">
+        <a href="./courses.html" class="text-xl font-bold">Cursussen</a>
+        <a href="./Incompany.html" class="text-xl font-bold">In company</a>
+        <a href="./location.html" class="text-xl font-bold">Leslocatie</a>
+        <a href="./news.html" class="text-xl font-bold">Nieuws</a>
+        <a href="./about.html" class="text-xl font-bold">Inschrijven</a>
+      </nav>
+
+      <!-- Mobile Toggle + Icons -->
+      <div class="lg:hidden flex items-center gap-4">
+        <button aria-label="phone">
+          <svg class="text-gray-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-phone">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.72-1.72a2 2 0 0 1 2.11-.45c.76.24 1.55.42 2.36.54A2 2 0 0 1 22 16.92z" />
+          </svg>
+
+        </button>
+        <button aria-label="search">
+          <svg class="text-gray-800" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+          </svg>
+        </button>
+        <button id="menuToggle" class="bg-primary text-white px-3 py-1 rounded-lg font-bold">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="lg:hidden hidden fixed inset-0 bg-white z-50 p-6 overflow-y-auto">
+    <div class="flex justify-end items-center mb-6">
+      <button id="menuClose" class="text-gray-800 text-4xl">&times;</button>
+    </div>
+    <ul class="mt-10 space-y-4 text-gray-800 mb-10">
+      <li><a href="./courses.html" class="text-xl font-bold">Cursussen</a></li>
+      <li><a href="./Incompany.html" class="text-xl font-bold">In company</a></li>
+      <li><a href="./location.html" class="text-xl font-bold">Leslocatie</a></li>
+      <li> <a href="./news.html" class="text-xl font-bold">Nieuws</a></li>
+      <li> <a href="./about.html" class="text-xl font-bold">Inschrijven</a></li>
+    </ul>
+    <hr>
+    <ul class="mt-10 space-y-4 text-gray-800">
+      <li><a href="./teachers.html" class="text-base">Docenten</a></li>
+      <li><a href="./about.html" class="text-base">Over</a></li>
+      <li><a href="#" class="text-base">Contact</a></li>
+    </ul>
+  </div>
+
+  <section>
+    <div class="container mx-auto">
+      <h1 class="text-2xl md:text-6xl font-bold text-center text-gray-800 my-10">Wetenschappelijk onderzoek toont
+        gunstige effecten van kinderopvang</h1>
+      <img src="./assets/images/home/newsimg-1.png" alt="News Image 1" class="my-4 mx-auto w-full">
+      <div class="md-container">
+        <p class="text-xl text-gray-800 mt-8">
+          Uit recent grootschalig Europees onderzoek, gepubliceerd in The Lancet, blijkt dat kinderopvang een positief
+          effect
+          heeft op de mentale gezondheid en het gedrag van kinderen tot 5 jaar. Kinderen die voor hun vierde levensjaar
+          naar een
+          kinderopvangcentrum gaan, vertonen op latere leeftijd minder gedragsproblemen en hebben minder last van
+          depressieve
+          gevoelens, angsten en fobieën. Het onderzoek volgde meer dan 80.000 kinderen in Nederland, Denemarken,
+          Groot-Brittannië,
+          Spanje en Frankrijk tot en met hun 13e levensjaar.
+          <br><br>
+          De positieve effecten van kinderopvang werden in alle deelnemende landen waargenomen, ongeacht de
+          sociaal-economische
+          achtergrond van de ouders. Volgens onderzoeker Hanan El Marroun van de Erasmus School of Social and
+          Behavioural
+          Sciences
+          leren kinderen in de opvang mogelijk beter omgaan met emoties, samenwerken en conflicten oplossen. Daarnaast
+          biedt de
+          opvang faciliteiten die bijdragen aan de ontwikkeling van het kind, zoals gestructureerde activiteiten en
+          sociale
+          interactie met leeftijdsgenoten. ​
+          <br><br>
+          Bijzonder hoogleraar kinderopvang Ruben Fukkink noemt het onderzoek een doorbraak. Eerdere studies, met name
+          uit
+          de
+          Verenigde Staten, lieten uiteenlopende resultaten zien over de effecten van kinderopvang. Dit grootschalige
+          Europese
+          onderzoek biedt nu een consistent positief beeld en benadrukt het belang van kwalitatieve kinderopvang voor
+          jonge
+          kinderen. ​
+          <br><br>
+          Deze bevindingen onderstrepen het belang van investeringen in de kwaliteit en toegankelijkheid van
+          kinderopvang.
+          Door
+          kinderen op jonge leeftijd toegang te geven tot kwalitatieve opvang, kunnen gedragsproblemen en psychische
+          klachten op
+          latere leeftijd mogelijk worden verminderd. Dit draagt bij aan een sterkere basis voor het welzijn en de
+          ontwikkeling
+          van kinderen in hun verdere leven.
+        </p>
+      </div>
+      <div class="lg-container">
+        <h1 class="text-2xl md:text-6xl font-bold  text-gray-800 my-10">Buitenspelen essentieel voor de
+          ontwikkeling van jonge kinderen:
+          Onderzoek benadrukt de voordelen</h1>
+      </div>
+      <img src="./assets/images/home/newsimg-2.png" alt="News Image 1" class="my-4 mx-auto w-full">
+      <div class="md-container">
+        <p class="text-xl text-gray-800">
+          Uit recent onderzoek blijkt dat buitenspelen een cruciale rol speelt in de fysieke, mentale en sociale
+          ontwikkeling van
+          kinderen. Desondanks neemt het aantal kinderen dat regelmatig buiten speelt af. Volgens een peiling van Jantje
+          Beton
+          onder meer dan 500 kinderen van 6 tot 12 jaar geeft 21% aan te weinig tijd te hebben om buiten te spelen .​
+          <br><br>
+          Buitenspelen biedt kinderen de mogelijkheid om sociale vaardigheden te ontwikkelen. Zo speelt 62% van de
+          kinderen buiten
+          met drie of meer anderen, terwijl 25% van de kinderen die binnen spelen dit alleen doet . Daarnaast komen 6 op
+          de 10
+          kinderen buiten andere kinderen tegen die ze normaal niet zien, wat bijdraagt aan hun sociale netwerk.​
+          <br><br>
+          Fysiek gezien draagt buitenspelen bij aan de ontwikkeling van motorische vaardigheden en het verminderen van
+          gezondheidsproblemen zoals overgewicht. Ook helpt het bij het reguleren van het slaapritme en het verbeteren
+          van
+          de
+          slaapkwaliteit .​
+          Startpagina
+          <br><br>
+          Mentale voordelen zijn onder andere verbeterde concentratie en stressreductie. Tijd doorbrengen in de natuur
+          verbetert
+          de aandachts-spanne en verlaagt stressniveaus, wat goed is voor een gezonde emotionele balans .​
+          Startpagina
+          <br><br>
+          Ondanks deze voordelen speelt een aanzienlijk aantal kinderen minder dan één uur per dag buiten. In stedelijke
+          gebieden
+          spelen kinderen gemiddeld drie uur per week minder buiten dan in niet-stedelijke gebieden . Redenen hiervoor
+          zijn onder
+          andere het gebrek aan speelruimte, zorgen over veiligheid en de aantrekkingskracht van digitale media.​
+          <br><br>
+          Organisaties zoals Jantje Beton pleiten voor meer aandacht en investeringen in buitenspeelvoorzieningen. Ze
+          benadrukken
+          dat buitenspelen niet alleen leuk is, maar ook essentieel voor de algehele ontwikkeling van kinderen. Het
+          creëren van
+          veilige en toegankelijke speelruimtes kan bijdragen aan het welzijn en de groei van toekomstige generaties
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10">
+    <div class="container mx-auto">
+      <h2 class="text-primary text-center text-2xl md:text-3xl xl:text-4xl font-bold mb-8">Geregistreerd bij Het CRKBO
+      </h2>
+      <p class="text-center text-xl text-gray-800 my-10">Al onze cursussen zijn geaccrediteerd door het NIP/NVO/SKJ
+        en/of
+        andere beroepsverenigingen
+        <br> zoals de VGCT en de
+        NVRG.
+      </p>
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-center">
+        <img src="./assets/images/home/nvrg-logo.png" alt="Logo nvrg" class="mx-auto">
+        <img src="./assets/images/home/nip-logo.png" alt="Logo nip" class="mx-auto">
+        <img src="./assets/images/home/skj-logo.png" alt="Logo skj" class="mx-auto">
+        <img src="./assets/images/home/r-logog.png" alt="Logo r" class="mx-auto">
+        <img src="./assets//images/home/vgct-logo.png" alt="Logo vgct" class="mx-auto">
+        <img src="./assets/images/home/nvo-logo.png" alt="Logo nvo" class="mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Left Section -->
+      <div>
+        <img src="./assets/images/footer/logo.png" alt="Logo" class="mb-4">
+        <p>De Jeugdzorgacademie</p>
+        <p>Grebbeberglaan 15, 3527 VX Utrecht</p>
+        <p>Lindenstraat 47, 2023 TC Haarlem</p>
+        <p class="mt-8">085 - 4556677</p>
+        <p>info@dejeugdzorgacademie.nl</p>
+      </div>
+
+      <!-- Center Section -->
+      <div>
+        <ul class="space-y-2">
+          <li><a href="#">Cookieverklaring</a></li>
+          <li><a href="#">Algemene voorwaarden</a></li>
+          <li><a href="#">Privacy verklaring</a></li>
+          <li><a href="#">Uitschrijven</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col justify-between">
+        <div>
+          <a href="#"
+            class="flex justify-center text-center w-fit bg-transparent text-lg font-medium px-9 py-2 border border-white rounded-tr-xl mb-10">
+            Stel een vraag
+            <svg class="text-white ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+
+          <a href="#">
+            <img src="./assets/images/footer/linkedin-icon.png" alt="LinkedIn">
+          </a>
+        </div>
+        <p class="mt-10">2021 © De Jeugdzorgacademie</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./tailwind.config.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

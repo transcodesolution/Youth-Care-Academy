@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Care Academy - Over</title>
+  <link rel="stylesheet" href="./assets/css/global.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="bg-gray-800 text-white py-2 hidden lg:block">
+    <div class="container mx-auto px-4 flex justify-between items-center text-base">
+      <a href="tel: 0854556677" class="text-base"> 085 - 4556677</a>
+      <div class="relative hidden md:block">
+        <input type="text" class="pl-3 pr-10 py-[5px] rounded-md  focus:outline-none w-96">
+        <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 w-5 h-5"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+      <div class="space-x-10 md:flex">
+        <a href="./teachers.html" class="text-base">Docenten</a>
+        <a href="./about.html" class="text-base">Over</a>
+        <a href="#" class="text-base">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="bg-white">
+    <div class="container flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="./assets/images/header/logo.png" alt="Logo" class="md:w-auto w-40">
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex space-x-9 text-gray-600 text-base">
+        <a href="./courses.html" class="text-xl font-bold">Cursussen</a>
+        <a href="./Incompany.html" class="text-xl font-bold">In company</a>
+        <a href="./location.html" class="text-xl font-bold">Leslocatie</a>
+        <a href="./news.html" class="text-xl font-bold">Nieuws</a>
+        <a href="./about.html" class="text-xl font-bold">Inschrijven</a>
+      </nav>
+
+      <!-- Mobile Toggle + Icons -->
+      <div class="lg:hidden flex items-center gap-4">
+        <button aria-label="phone">
+          <svg class="text-gray-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-phone">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.36a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.72-1.72a2 2 0 0 1 2.11-.45c.76.24 1.55.42 2.36.54A2 2 0 0 1 22 16.92z" />
+          </svg>
+
+        </button>
+        <button aria-label="search">
+          <svg class="text-gray-800" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z" />
+          </svg>
+        </button>
+        <button id="menuToggle" class="bg-primary text-white px-3 py-1 rounded-lg font-bold">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="lg:hidden hidden fixed inset-0 bg-white z-50 p-6 overflow-y-auto">
+    <div class="flex justify-end items-center mb-6">
+      <button id="menuClose" class="text-gray-800 text-4xl">&times;</button>
+    </div>
+    <ul class="mt-10 space-y-4 text-gray-800 mb-10">
+      <li><a href="./courses.html" class="text-xl font-bold">Cursussen</a></li>
+      <li><a href="./Incompany.html" class="text-xl font-bold">In company</a></li>
+      <li><a href="./location.html" class="text-xl font-bold">Leslocatie</a></li>
+      <li> <a href="./news.html" class="text-xl font-bold">Nieuws</a></li>
+      <li> <a href="./about.html" class="text-xl font-bold">Inschrijven</a></li>
+    </ul>
+    <hr>
+    <ul class="mt-10 space-y-4 text-gray-800">
+      <li><a href="./teachers.html" class="text-base">Docenten</a></li>
+      <li><a href="./about.html" class="text-base">Over</a></li>
+      <li><a href="#" class="text-base">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="relative h-[390px] md:h-[437px]">
+    <img src="./assets/images/about/banner-img.png" alt="Banner" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="relative z-10 flex items-center h-full">
+      <div class="container px-6">
+        <div class="text-white">
+          <p class="uppercase text-xl md:text-3xl font-light">Over ons</p>
+          <h2 class="text-xl md:text-5xl font-medium italic mb-2">De beste kennis voor een faire prijs</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pt-12">
+    <div class="md-container">
+      <p class="text-xl text-gray-600">Einde 2012. Nina Draaisma en Borre Prins besluiten een opleidingsinstituut te
+        beginnen. In het kader van
+        professionalisering in de jeugdzorg willen ze cursussen en trainingen aanbieden die beter aansluiten bij de
+        actuele
+        behoeften binnen de jeugdzorg. Op dit moment doen ze dit nog steeds, vol toewijding en plezier. De
+        Jeugdzorgacademie is
+        alweer 11 jaar actief.
+        <br><br>
+        De uitdaging
+        We willen ontwikkeling bevorderen en mogelijk maken, van mensen en organisaties. En zo een bijdrage leveren om
+        te zorgen
+        dat gedragswetenschappers en jeugdzorgprofessionals de benodigde registraties kunnen halen. Dat was - en is nog
+        steeds -
+        een ambitieuze uitdaging. 
+        <br><br>
+        Samen met de beste docenten naar succes
+        Bij De Jeugdzorgacademie weten we als geen ander wat er speelt. We ontwikkelen samen met de beste docenten
+        aansluitende
+        en hedendaagse scholing. Alles doen we met gevoel voor jeugdzorg. Groot deel van het succes is ook dat we er
+        alles aan
+        doen om opleidingen en het behalen van een registratie betaalbaar te houden. 
+        <br><br>
+        Naar een mooie toekomst
+        Er is veel moois gebeurd sinds de start in 2012. Maar één ding vinden we nog steeds belangrijk. Samen met onze
+        docenten
+        een positieve kwaliteitsbijdrage leveren - en blijven leveren - aan de jeugdzorg en maatschappij.
+      </p>
+      <a href="#"
+        class="flex items-center justify-center text-primary border border-primary  md:px-6 py-2 rounded-tr-xl text-xs md:text-lg w-fit mt-8">
+        Bekijk alle 236 cursussen
+        <svg class="text-primary w-5 ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+  </section>
+  <section class="py-10">
+    <div class="container mx-auto">
+      <h3 class="text-4xl font-bold text-gray-800 mb-4">Het team</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-gray-100 rounded-t-lg relative">
+          <img src="./assets/images/about/team-1.png" alt="teacher Image" class="w-full object-cover bg-white ">
+          <div class="p-4 pb-10">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Annemarie Meijers</h3>
+            <p class="text-gray-800 leading-7 text-base my-8">
+              Behalve jurist ben ik, ook docent, gecertificeerd trainer en mediator. Intrinsiek gemotiveerd vanuit
+              zingeving. 
+            </p>
+          </div>
+          <a href="#"
+            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            Leer over Annemarie
+            <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="bg-gray-100 rounded-t-lg relative">
+          <img src="./assets/images/about/team-2.png" alt="teacher Image" class="w-full object-cover bg-white ">
+          <div class="p-4 mb-16">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Annelies Hansma</h3>
+            <p class="text-gray-800 leading-7 text-base my-8">
+              Annelies Hansma is een ervaren orthopedagoog en orthopedagoog-generalist (vanaf 2020) met bijna
+            </p>
+          </div>
+          <a href="#"
+            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            Leer over Annemarie
+            <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="bg-gray-100 rounded-t-lg relative">
+          <img src="./assets/images/about/team-3.png" alt="teacher Image" class="w-full object-cover bg-white ">
+
+          <div class="p-4 mb-16">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Annelies Hansma</h3>
+            <p class="text-gray-800 leading-7 text-base my-8">
+              Annelies Hansma is een ervaren orthopedagoog en orthopedagoog-generalist (vanaf 2020) met bijna
+            </p>
+          </div>
+          <a href="#"
+            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            Leer over Annemarie
+            <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10">
+    <div class="container">
+      <h3 class="text-4xl font-bold text-gray-800 mb-4">Laatste nieuws</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- News Item 1 -->
+        <div>
+          <h3 class="text-gray-800 text-xl md:text-3xl font-normal mb-4 md:h-28">
+            Wetenschappelijk onderzoek toont gunstige effecten van kinderopvang
+          </h3>
+          <img src="./assets/images/home/newsimg-1.png" alt="News Image 1" class="mb-4">
+          <p class="text-gray-800">
+            Uit recent grootschalig Europees onderzoek, gepubliceerd in The Lancet, blijkt dat kinderopvang een positief
+            effect heeft op de mentale...
+          </p>
+        </div>
+        <!-- News Item 2 -->
+        <div>
+          <h3 class="text-gray-800 text-xl md:text-3xl font-normal mb-4 md:h-28">
+            Buitenspelen essentieel voor de ontwikkeling van jonge kinderen: Onderzoek benadrukt de voordelen
+          </h3>
+          <img src="./assets/images/home/newsimg-2.png" alt="News Image 2" class="mb-4">
+          <p class="text-gray-800">
+            Uit recent grootschalig Europees onderzoek, gepubliceerd in The Lancet, blijkt dat kinderopvang een positief
+            effect heeft op de mentale...
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10">
+    <div class="container mx-auto">
+      <h2 class="text-primary text-center text-2xl md:text-3xl xl:text-4xl font-bold mb-8">Geregistreerd bij Het CRKBO
+      </h2>
+      <p class="text-center text-xl text-gray-800 my-10">Al onze cursussen zijn geaccrediteerd door het NIP/NVO/SKJ
+        en/of
+        andere beroepsverenigingen
+        <br> zoals de VGCT en de
+        NVRG.
+      </p>
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-center">
+        <img src="./assets/images/home/nvrg-logo.png" alt="Logo nvrg" class="mx-auto">
+        <img src="./assets/images/home/nip-logo.png" alt="Logo nip" class="mx-auto">
+        <img src="./assets/images/home/skj-logo.png" alt="Logo skj" class="mx-auto">
+        <img src="./assets/images/home/r-logog.png" alt="Logo r" class="mx-auto">
+        <img src="./assets//images/home/vgct-logo.png" alt="Logo vgct" class="mx-auto">
+        <img src="./assets/images/home/nvo-logo.png" alt="Logo nvo" class="mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Left Section -->
+      <div>
+        <img src="./assets/images/footer/logo.png" alt="Logo" class="mb-4">
+        <p>De Jeugdzorgacademie</p>
+        <p>Grebbeberglaan 15, 3527 VX Utrecht</p>
+        <p>Lindenstraat 47, 2023 TC Haarlem</p>
+        <p class="mt-8">085 - 4556677</p>
+        <p>info@dejeugdzorgacademie.nl</p>
+      </div>
+
+      <!-- Center Section -->
+      <div>
+        <ul class="space-y-2">
+          <li><a href="#">Cookieverklaring</a></li>
+          <li><a href="#">Algemene voorwaarden</a></li>
+          <li><a href="#">Privacy verklaring</a></li>
+          <li><a href="#">Uitschrijven</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col justify-between">
+        <div>
+          <a href="#"
+            class="flex justify-center text-center w-fit bg-transparent text-lg font-medium px-9 py-2 border border-white rounded-tr-xl mb-10">
+            Stel een vraag
+            <svg class="text-white ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 19h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+
+          <a href="#">
+            <img src="./assets/images/footer/linkedin-icon.png" alt="LinkedIn">
+          </a>
+        </div>
+        <p class="mt-10">2021 © De Jeugdzorgacademie</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./tailwind.config.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

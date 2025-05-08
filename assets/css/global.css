@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+  .md-container {
+    max-width: 940px;
+    margin: auto;
+  }
+  .lg-container {
+    max-width: 1004px;
+    margin: auto;
+  }
+}
