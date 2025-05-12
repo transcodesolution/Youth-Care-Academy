@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youth Care Academy - Docenten</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/global.css">
 </head>
 
 <body>
@@ -14,14 +15,14 @@
     <div class="container mx-auto px-4 flex justify-between items-center text-base">
       <a href="tel: 0854556677" class="text-base"> 085 - 4556677</a>
       <div class="relative hidden md:block">
-        <input type="text" class="pl-3 pr-10 py-[5px] rounded-md  focus:outline-none w-96">
+        <input placeholder="Zoeken..." type="text" class="pl-3 pr-10 py-[5px] rounded-md  focus:outline-none w-96">
         <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 w-5 h-5"
           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
       </div>
-      <div class="space-x-10 md:flex">
+      <div class="space-x-12 md:flex">
         <a href="./teachers.html" class="text-base">Docenten</a>
         <a href="./about.html" class="text-base">Over</a>
         <a href="#" class="text-base">Contact</a>
@@ -38,7 +39,7 @@
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex space-x-9 text-gray-600 text-base">
+      <nav class="hidden lg:flex space-x-12 text-gray-600 text-base">
         <a href="./courses.html" class="text-xl font-bold">Cursussen</a>
         <a href="./Incompany.html" class="text-xl font-bold">In company</a>
         <a href="./location.html" class="text-xl font-bold">Leslocatie</a>
@@ -96,8 +97,8 @@
     <div class="relative">
       <div class="container mx-auto">
         <div
-          class="absolute -bottom-20 bg-primary  text-white p-6 rounded-tl-lg rounded-tr-3xl rounded-br-lg shadow-lg max-w-md w-[min(90%,589px)] left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none pb-10">
-          <h2 class="text-lg md:text-3xl font-medium mb-8 italic">Filter op docentsoort</h2>
+          class="absolute -bottom-20 bg-primary  text-white p-6 rounded-tl-2xl rounded-tr-4xl rounded-br-2xl shadow-lg max-w-md w-[min(90%,589px)] left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none pb-10">
+          <h2 class="text-lg md:text-3xl font-medium mb-8 italic text-tuna">Filter op docentsoort</h2>
           <p class="mb-4 text-xs">Klik om te filteren:</p>
           <ul class="space-y-2 text-xl">
             <li>Gehechtheid en trauma</li>
@@ -124,9 +125,9 @@
         <!-- Single Course Card -->
         <div class="bg-gray-100 rounded-t-lg relative">
           <div class="relative">
-            <img src="./assets/images/teacher/teacher-1.png" alt="teacher Image" class="w-full object-cover bg-white ">
+            <img src="./assets/images/teacher/teacher-1.png" alt="teacher Image" class="w-full object-cover">
             <a href="#"
-              class="w-4/5 text-gray-800 bg-white px-8 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
+              class="w-4/5 text-gray-800 bg-white px-8 py-2 rounded-tl-md rounded-tr-xl rounded-bl-md  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
               Juridisch en ethiek
             </a>
           </div>
@@ -138,7 +139,7 @@
             </p>
           </div>
           <a href="#"
-            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-lg w-fit absolute bottom-0">
             Leer over Annemarie
             <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -151,9 +152,9 @@
         </div>
         <div class="bg-gray-100 rounded-t-lg relative">
           <div class="relative">
-            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover bg-white ">
+            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover">
             <a href="#"
-              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
+              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-md rounded-tr-xl rounded-bl-md  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
               Cognitieve gedragdstherapie
             </a>
           </div>
@@ -164,7 +165,7 @@
             </p>
           </div>
           <a href="#"
-            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-lg w-fit absolute bottom-0">
             Leer over Annemarie
             <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -177,9 +178,9 @@
         </div>
         <div class="bg-gray-100 rounded-t-lg relative">
           <div class="relative">
-            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover bg-white ">
+            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover">
             <a href="#"
-              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
+              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-md rounded-tr-xl rounded-bl-md  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
               Cognitieve gedragdstherapie
             </a>
           </div>
@@ -190,7 +191,7 @@
             </p>
           </div>
           <a href="#"
-            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-lg w-fit absolute bottom-0">
             Leer over Annemarie
             <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -203,9 +204,9 @@
         </div>
         <div class="bg-gray-100 rounded-t-lg relative">
           <div class="relative">
-            <img src="./assets/images/teacher/teacher-1.png" alt="teacher Image" class="w-full object-cover bg-white ">
+            <img src="./assets/images/teacher/teacher-1.png" alt="teacher Image" class="w-full object-cover">
             <a href="#"
-              class="w-4/5 text-gray-800 bg-white px-8 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
+              class="w-4/5 text-gray-800 bg-white px-8 py-2 rounded-tl-md rounded-tr-xl rounded-bl-md  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
               Juridisch en ethiek
             </a>
           </div>
@@ -217,7 +218,7 @@
             </p>
           </div>
           <a href="#"
-            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-lg w-fit absolute bottom-0">
             Leer over Annemarie
             <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -230,9 +231,9 @@
         </div>
         <div class="bg-gray-100 rounded-t-lg relative">
           <div class="relative">
-            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover bg-white ">
+            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover">
             <a href="#"
-              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
+              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-md rounded-tr-xl rounded-bl-md  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
               Cognitieve gedragdstherapie
             </a>
           </div>
@@ -243,7 +244,7 @@
             </p>
           </div>
           <a href="#"
-            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-lg w-fit absolute bottom-0">
             Leer over Annemarie
             <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -256,9 +257,9 @@
         </div>
         <div class="bg-gray-100 rounded-t-lg relative">
           <div class="relative">
-            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover bg-white ">
+            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover">
             <a href="#"
-              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
+              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-md rounded-tr-xl rounded-bl-md  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
               Cognitieve gedragdstherapie
             </a>
           </div>
@@ -269,7 +270,7 @@
             </p>
           </div>
           <a href="#"
-            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-lg w-fit absolute bottom-0">
             Leer over Annemarie
             <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -282,9 +283,9 @@
         </div>
         <div class="bg-gray-100 rounded-t-lg relative">
           <div class="relative">
-            <img src="./assets/images/teacher/teacher-1.png" alt="teacher Image" class="w-full object-cover bg-white ">
+            <img src="./assets/images/teacher/teacher-1.png" alt="teacher Image" class="w-full object-cover">
             <a href="#"
-              class="w-4/5 text-gray-800 bg-white px-8 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
+              class="w-4/5 text-gray-800 bg-white px-8 py-2 rounded-tl-md rounded-tr-xl rounded-bl-md  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
               Juridisch en ethiek
             </a>
           </div>
@@ -296,7 +297,7 @@
             </p>
           </div>
           <a href="#"
-            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-lg w-fit absolute bottom-0">
             Leer over Annemarie
             <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -309,9 +310,9 @@
         </div>
         <div class="bg-gray-100 rounded-t-lg relative">
           <div class="relative">
-            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover bg-white ">
+            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover">
             <a href="#"
-              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
+              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-md rounded-tr-xl rounded-bl-md  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
               Cognitieve gedragdstherapie
             </a>
           </div>
@@ -322,7 +323,7 @@
             </p>
           </div>
           <a href="#"
-            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-lg w-fit absolute bottom-0">
             Leer over Annemarie
             <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -335,9 +336,9 @@
         </div>
         <div class="bg-gray-100 rounded-t-lg relative">
           <div class="relative">
-            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover bg-white ">
+            <img src="./assets/images/teacher/teacher-2.png" alt="teacher Image" class="w-full object-cover">
             <a href="#"
-              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
+              class="w-4/5 text-gray-800 bg-white px-4 py-2 rounded-tl-md rounded-tr-xl rounded-bl-md  font-bold text-base md:text-xl  absolute top-6 left-6 z-1">
               Cognitieve gedragdstherapie
             </a>
           </div>
@@ -348,7 +349,7 @@
             </p>
           </div>
           <a href="#"
-            class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit absolute bottom-0">
+            class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-lg w-fit absolute bottom-0">
             Leer over Annemarie
             <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -391,7 +392,7 @@
       <div class="flex flex-col justify-between">
         <div>
           <a href="#"
-            class="flex justify-center text-center w-fit bg-transparent text-lg font-medium px-9 py-2 border border-white rounded-tr-xl mb-10">
+            class="flex justify-center text-center w-fit bg-transparent text-lg font-medium px-9 py-2 border border-white rounded-tr-2xl mb-10">
             Stel een vraag
             <svg class="text-white ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">

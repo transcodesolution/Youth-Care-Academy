@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youth Care Academy - Course Detail</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/global.css">
 </head>
 
 <body>
@@ -14,14 +15,14 @@
     <div class="container mx-auto px-4 flex justify-between items-center text-base">
       <a href="tel: 0854556677" class="text-base"> 085 - 4556677</a>
       <div class="relative hidden md:block">
-        <input type="text" class="pl-3 pr-10 py-[5px] rounded-md  focus:outline-none w-96">
+        <input placeholder="Zoeken..." type="text" class="pl-3 pr-10 py-[5px] rounded-md  focus:outline-none w-96">
         <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 w-5 h-5"
           xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
       </div>
-      <div class="space-x-10 md:flex">
+      <div class="space-x-12 md:flex">
         <a href="./teachers.html" class="text-base">Docenten</a>
         <a href="./about.html" class="text-base">Over</a>
         <a href="#" class="text-base">Contact</a>
@@ -38,7 +39,7 @@
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex space-x-9 text-gray-600 text-base">
+      <nav class="hidden lg:flex space-x-12 text-gray-600 text-base">
         <a href="./courses.html" class="text-xl font-bold">Cursussen</a>
         <a href="./Incompany.html" class="text-xl font-bold">In company</a>
         <a href="./location.html" class="text-xl font-bold">Leslocatie</a>
@@ -95,36 +96,36 @@
     <div class="container mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8" id="tab-card">
         <!-- Left Content -->
-        <div class="lg:col-span-2 bg-white shadow-card p-4 md:p-10 rounded-tl-lg rounded-tr-3xl rounded-br-lg -mt-32">
-          <h1 class="md:text-5xl text-2xl font-medium italic text-gray-800 mb-4">Basiscursus CGT (Cognitieve
+        <div class="lg:col-span-2 bg-white shadow-card p-4 md:p-10 rounded-tl-2xl rounded-tr-4xl rounded-br-2xl -mt-32">
+          <h1 class="md:text-6xl text-2xl font-medium italic text-gray-800 mb-2 text-tuna">Basiscursus CGT (Cognitieve
             Gedragstherapie)</h1>
           <p class="text-gray-800 mb-2 text-xl">
             10 lesdagen
           </p>
-          <div class="flex mt-0.5 gap-2">
+          <div class="flex mt-0.5 gap-2 items-center">
             <span class="text-primary text-base font-bold">(4.8)</span>
-            <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+            <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                 fill="currentColor" />
             </svg>
-            <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+            <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                 fill="currentColor" />
-            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+            </svg> <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                 fill="currentColor" />
-            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+            </svg> <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                 fill="currentColor" />
-            </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+            </svg> <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
@@ -171,7 +172,7 @@
                 <p class="text-3xl font-bold text-gray-800 mb-4">€ 2725</p>
               </div>
               <a type="button"
-                class="flex text-center justify-center text-white bg-primary px-4 py-1 rounded-tr-xl text-lg w-fit mb-2">
+                class="flex items-center justify-center text-white bg-primary px-4 py-1 rounded-tr-2xl text-lg w-fit mb-2">
                 Inschrijven
                 <svg class="text-white ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -205,7 +206,7 @@
                 <p class="text-3xl font-bold text-gray-800 mb-4">€ 2725</p>
               </div>
               <a type="button"
-                class="flex text-center justify-center text-white bg-primary px-4 py-1 rounded-tr-xl text-lg w-fit mb-2">
+                class="flex items-center justify-center text-white bg-primary px-4 py-1 rounded-tr-2xl text-lg w-fit mb-2">
                 Inschrijven
                 <svg class="text-white ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -239,7 +240,7 @@
                 <p class="text-3xl font-bold text-gray-800 mb-4">€ 2725</p>
               </div>
               <a type="button"
-                class="flex text-center justify-center text-white bg-primary px-4 py-1 rounded-tr-xl text-lg w-fit mb-2">
+                class="flex items-center justify-center text-white bg-primary px-4 py-1 rounded-tr-2xl text-lg w-fit mb-2">
                 Inschrijven
                 <svg class="text-white ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -263,7 +264,7 @@
           </div>
 
           <!-- Tab Content -->
-          <div id="tab-contents" class="-mt-[1px]">
+          <div id="tab-contents" class="-mt-[1px] md:mb-28">
             <!-- Content for Card 1 -->
             <div id="content-card-1" class="tab-content bg-gray-100 border border-gray-800">
               <!-- Card Header -->
@@ -272,38 +273,38 @@
                 <table class="min-w-full text-base font-normal">
                   <tbody>
                     <tr>
-                      <td>28-09-2025</td>
-                      <td>09:00 - 16:30</td>
+                      <td class="w-32">28-09-2025</td>
+                      <td class="w-32">09:00 - 16:30</td>
                       <td>Onderwerp van de dag</td>
                       <td class="py-2">Utrecht</td>
                     </tr>
                     <tr>
-                      <td>28-09-2025</td>
-                      <td>09:00 - 16:30</td>
+                      <td class="w-32">28-09-2025</td>
+                      <td class="w-32">09:00 - 16:30</td>
                       <td>Onderwerp van de dag</td>
                       <td class="py-2">Utrecht</td>
                     </tr>
                     <tr>
-                      <td>28-09-2025</td>
-                      <td>09:00 - 16:30</td>
+                      <td class="w-32">28-09-2025</td>
+                      <td class="w-32">09:00 - 16:30</td>
                       <td>Onderwerp van de dag</td>
                       <td class="py-2">Utrecht</td>
                     </tr>
                     <tr>
-                      <td>28-09-2025</td>
-                      <td>09:00 - 16:30</td>
+                      <td class="w-32">28-09-2025</td>
+                      <td class="w-32">09:00 - 16:30</td>
                       <td>Onderwerp van de dag</td>
                       <td class="py-2">Utrecht</td>
                     </tr>
                     <tr>
-                      <td>28-09-2025</td>
-                      <td>09:00 - 16:30</td>
+                      <td class="w-32">28-09-2025</td>
+                      <td class="w-32">09:00 - 16:30</td>
                       <td>Onderwerp van de dag</td>
                       <td class="py-2">Utrecht</td>
                     </tr>
                     <tr>
-                      <td>28-09-2025</td>
-                      <td>09:00 - 16:30</td>
+                      <td class="w-32">28-09-2025</td>
+                      <td class="w-32">09:00 - 16:30</td>
                       <td>Onderwerp van de dag</td>
                       <td class="py-2">Utrecht</td>
                     </tr>
@@ -318,7 +319,7 @@
                   <li>NIP K&J NVO OG Extra literatuur <b>(20)</b></li>
                   <li>NIP K&J NVO OG Herregistratie <b>(100)</b></li>
                   <li>SKJ (ortho)pedagogen en psychologen <b>(100)</b></li>
-                  <li>VGCT (100)</li>
+                  <li>VGCT <b>(100)</b></li>
                 </ul>
                 <h3 class="text-xl font-bold text-gray-800 my-4">Locatie</h3>
                 <p class="text-gray-800 text-base mb-4">De Pionier<br>Grebbeberglaan 15 <br> Utrecht</p>
@@ -327,7 +328,7 @@
                   Pionier betaald parkeren tot 11 uur</p>
                 <img src="./assets/images/courses/map.png" alt="Map">
                 <a href="#"
-                  class="flex my-6 text-center justify-center text-primary border border-primary px-8 py-2 rounded-tr-xl text-lg w-fit">
+                  class="flex my-6 text-center justify-center text-primary border border-primary px-8 py-2 rounded-tr-2xl text-lg w-fit">
                   Open in Google Maps
                   <svg class="text-primary ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -449,7 +450,7 @@
                   Pionier betaald parkeren tot 11 uur</p>
                 <img src="./assets/images/courses/map.png" alt="Map">
                 <a href="#"
-                  class="flex my-6 text-center justify-center text-primary border border-primary px-8 py-2 rounded-tr-xl text-lg w-fit">
+                  class="flex my-6 text-center justify-center text-primary border border-primary px-8 py-2 rounded-tr-2xl text-lg w-fit">
                   Open in Google Maps
                   <svg class="text-primary ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -571,7 +572,7 @@
                   Pionier betaald parkeren tot 11 uur</p>
                 <img src="./assets/images/courses/map.png" alt="Map">
                 <a href="#"
-                  class="flex my-6 text-center justify-center text-primary border border-primary px-8 py-2 rounded-tr-xl text-lg w-fit">
+                  class="flex my-6 text-center justify-center text-primary border border-primary px-8 py-2 rounded-tr-2xl text-lg w-fit">
                   Open in Google Maps
                   <svg class="text-primary ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -811,7 +812,7 @@
         <!-- Right Sidebar -->
         <div class="mt-6">
           <a href="#"
-            class="flex mb-6 text-center justify-center text-primary border border-primary px-4 py-2 rounded-tr-xl text-lg w-full">
+            class="flex mb-6 text-center justify-center text-primary border border-primary px-4 py-2 rounded-tr-2xl text-lg w-full">
             Incompany aanvragen
             <svg class="text-primary ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -829,7 +830,7 @@
                 <img src="./assets/images/courses/course-image.png" alt="Course Image"
                   class="w-full object-cover bg-gray-100 ">
                 <a href="#"
-                  class="text-white bg-primary px-8 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-xl w-fit absolute top-6 left-6 z-1">
+                  class="text-white bg-primary px-8 py-2 rounded-tl-md rounded-tr-2xl rounded-bl-md  font-bold text-xl w-fit absolute top-6 left-6 z-1">
                   Verdiepingscursus
                 </a>
               </div>
@@ -840,40 +841,40 @@
                   In deze training worden kennis en vaardigheden op het gebied van gehechtheid en trauma vertaald naar
                   het werken bij Veilig Thuis.
                 </p>
-                <div class="flex mt-0.5 gap-2">
-                  <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+                <div class="flex mt-0.5 gap-2 items-center">
+                  <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                       fill="currentColor" />
                   </svg>
-                  <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+                  <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                       fill="currentColor" />
-                  </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+                  </svg> <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                       fill="currentColor" />
-                  </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+                  </svg> <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                       fill="currentColor" />
-                  </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+                  </svg> <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                       fill="currentColor" />
                   </svg>
-                  <span class="text-gray-800 text-xl">(21)</span>
+                  <span class="text-gray-800 text-base">(21)</span>
                 </div>
                 <p class="text-gray-600 text-sm my-4">14 dagen (iedere week op Din & Woe)</p>
               </div>
               <a href="#"
-                class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit">
+                class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-base font-bold w-fit">
                 Informatie en startdata
                 <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -889,7 +890,7 @@
                 <img src="./assets/images/courses/course-image.png" alt="Course Image"
                   class="w-full object-cover bg-gray-100 ">
                 <a href="#"
-                  class="text-white bg-gray-800 px-8 py-2 rounded-tl-lg rounded-tr-2xl rounded-bl-lg  font-bold text-xl w-fit absolute top-6 left-6 z-1">
+                  class="text-white bg-gray-800 px-8 py-2 rounded-tl-md rounded-tr-2xl rounded-bl-md  font-bold text-xl w-fit absolute top-6 left-6 z-1">
                   Basisopleiding NIKA
                 </a>
               </div>
@@ -899,40 +900,40 @@
                   In deze training worden kennis en vaardigheden op het gebied van gehechtheid en trauma vertaald naar
                   het werken bij Veilig Thuis.
                 </p>
-                <div class="flex mt-0.5 gap-2">
-                  <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+                <div class="flex mt-0.5 gap-2 items-center">
+                  <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                       fill="currentColor" />
                   </svg>
-                  <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+                  <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                       fill="currentColor" />
-                  </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+                  </svg> <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                       fill="currentColor" />
-                  </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+                  </svg> <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                       fill="currentColor" />
-                  </svg> <svg width="23" height="21" class="text-primary" viewBox="0 0 23 21" fill="none"
+                  </svg> <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M7.90539 6.33992L1.52539 7.26492L1.41239 7.28792C1.06413 7.38037 0.792538 7.65303 0.70145 8.00165C0.610362 8.35027 0.713866 8.72093 0.972388 8.97192L5.59439 13.4709L4.50439 19.8259L4.49139 19.9359C4.47007 20.2961 4.64446 20.6399 4.94772 20.8354C5.25098 21.031 5.63607 21.048 5.95539 20.8799L11.6614 17.8799L17.3544 20.8799L17.4544 20.9259C17.7905 21.0583 18.1718 20.9991 18.452 20.7712C18.7322 20.5432 18.8676 20.1819 18.8064 19.8259L17.7154 13.4709L22.3394 8.97092L22.4174 8.88592C22.6442 8.60655 22.7034 8.22684 22.5725 7.89165C22.4415 7.55647 22.1405 7.3175 21.7844 7.26592L15.4044 6.33992L12.5524 0.559922C12.384 0.218293 12.0362 0.00195312 11.6554 0.00195312C11.2745 0.00195312 10.9267 0.218293 10.7584 0.559922L7.90539 6.33992Z"
                       fill="currentColor" />
                   </svg>
-                  <span class="text-gray-800 text-xl">(21)</span>
+                  <span class="text-gray-800 text-base">(21)</span>
                 </div>
                 <p class="text-gray-600 text-sm my-4">14 dagen (iedere week op Din & Woe)</p>
               </div>
               <a href="#"
-                class="flex text-center justify-center text-white bg-primary px-4 py-2 rounded-tr-xl text-lg w-fit">
+                class="flex items-center justify-center text-white bg-primary px-4 py-2 rounded-tr-2xl text-base font-bold w-fit">
                 Informatie en startdata
                 <svg class="text-white  ml-3" width="33" height="32" viewBox="0 0 38 38" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -978,7 +979,7 @@
       <div class="flex flex-col justify-between">
         <div>
           <a href="#"
-            class="flex justify-center text-center w-fit bg-transparent text-lg font-medium px-9 py-2 border border-white rounded-tr-xl mb-10">
+            class="flex justify-center text-center w-fit bg-transparent text-lg font-medium px-9 py-2 border border-white rounded-tr-2xl mb-10">
             Stel een vraag
             <svg class="text-white ml-2" width="33" height="32" viewBox="0 0 38 38" fill="none"
               xmlns="http://www.w3.org/2000/svg">

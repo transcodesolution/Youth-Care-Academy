@@ -1,3 +1,12 @@
+@font-face {
+  font-family: Tuna-Medium;
+  src: url(/assets/fonts/fonnts.com-Tuna-.otf);
+}
+
+.text-tuna {
+  font-family: "Tuna-Medium", sans-serif;
+}
+
 @media (min-width: 768px) {
   .md-container {
     max-width: 940px;

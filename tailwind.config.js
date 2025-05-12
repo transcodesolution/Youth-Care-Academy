@@ -15,7 +15,6 @@ tailwind.config = {
         green: {
           500: '#5F9287',  // base color 
         },
-
       },
       container: {
         center: true,
@@ -27,6 +26,15 @@ tailwind.config = {
       },
       boxShadow: {
         card: '0 0 10px 0 rgba(0, 0, 0, 0.1)', // X: 0, Y: 0, Blur: 10, Spread: 0, Color: rgba(0, 0, 0, 0.1)
+      },
+      fontSize: {
+        '5xl': '40px'
+      },
+      borderRadius: {
+        'md': '5px',
+        'xl': '10px',
+        '2xl': '15px',
+        '4xl': '30px',
       },
     },
   },
