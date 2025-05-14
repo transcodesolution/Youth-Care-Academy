@@ -1,13 +1,5 @@
-@font-face {
-  font-family: Tuna-Medium;
-  src: url(/assets/fonts/fonnts.com-Tuna-Medium.otf);
-}
-
-:root {
-  --Tuna-Medium: Tuna-Medium;
-}
 .text-tuna {
-  font-family: var(--Tuna-Medium);
+  font-family: "tuna", sans-serif;
 }
 
 @media (min-width: 768px) {

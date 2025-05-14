@@ -28,6 +28,7 @@ tailwind.config = {
         card: '0 0 10px 0 rgba(0, 0, 0, 0.1)', // X: 0, Y: 0, Blur: 10, Spread: 0, Color: rgba(0, 0, 0, 0.1)
       },
       fontSize: {
+        'xxs': '10px',
         '5xl': '40px'
       },
       borderRadius: {
