@@ -12,3 +12,7 @@
     margin: auto;
   }
 }
+
+.tabs::-webkit-scrollbar {
+  height: 0px;
+}

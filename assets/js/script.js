@@ -40,12 +40,70 @@ function activateCard(cardId) {
     activeCard.classList.remove("mb-1");
     activeCard.classList.remove("rounded-bl-lg");
 
+    activeCard.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+
     const activeSvg = activeCard.querySelector("a #arrow-svg");
     if (activeSvg) {
         activeSvg.classList.add("rotate-90");
     }
 }
 
+// function activateCard(cardId) {
+//     // Hide all tab contents
+//     console.log('cardId', cardId);
+
+//     document.querySelectorAll(".tab-content").forEach((content) => {
+//         content.classList.add("hidden");
+//     });
+
+//     // Show the selected tab content
+//     const contentId = `content-${cardId}`;
+//     document.getElementById(contentId).classList.remove("hidden");
+
+//     // Remove active styles from all owl-item wrappers
+//     document.querySelectorAll(".owl-item").forEach((item) => {
+//         item.classList.add("mb-1", "md:mb-5", "border-b-0", "rounded-bl-lg");
+//     });
+
+//     // Remove arrow rotation from all cards
+//     document.querySelectorAll(".tabs > div").forEach((card) => {
+//         const svg = card.querySelector("a #arrow-svg");
+//         if (svg) {
+//             svg.classList.remove("rotate-90");
+//         }
+//     });
+
+//     // Add active styles to the parent .owl-item of the clicked card
+//     const activeCard = document.getElementById(cardId);
+//     const activeItem = activeCard.parentElement;
+//     console.log('activeItemactiveItem', activeItem);
+
+//     if (activeItem) {
+//         activeItem.classList.remove("mb-1", "md:mb-5", "border-b-0", "rounded-bl-lg");
+//     }
+
+//     // Rotate the arrow for the active card
+//     const activeSvg = activeCard.querySelector("a #arrow-svg");
+//     if (activeSvg) {
+//         activeSvg.classList.add("rotate-90");
+//     }
+// }
+
+
 document.addEventListener('DOMContentLoaded', () => {
     activateCard("card-1");
+
+    if (typeof $ !== "undefined" && $('.owl-carousel').length) {
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 16,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: { items: 1.2 },
+                640: { items: 2.2 },
+                1024: { items: 3 }
+            }
+        });
+    }
 });

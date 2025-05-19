@@ -8,6 +8,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="https://use.typekit.net/khb4ulv.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
 
 <body>
@@ -36,16 +39,16 @@
     <div class="container flex justify-between items-center py-4">
       <!-- Logo -->
       <a href="./index.html" class="flex items-center space-x-2">
-        <img src="./assets/images/header/logo.png" alt="Logo" class="md:w-auto w-40">
+        <img src="./assets/images/header/logo.svg" alt="Logo" class="md:w-auto w-40">
       </a>
 
       <!-- Desktop Nav -->
       <nav class="hidden lg:flex space-x-12 text-gray-600 text-base">
-        <a href="./courses.html" class="text-xl font-bold">Cursussen</a>
-        <a href="./Incompany.html" class="text-xl font-bold">In company</a>
-        <a href="./location.html" class="text-xl font-bold">Leslocatie</a>
-        <a href="./news.html" class="text-xl font-bold">Nieuws</a>
-        <a href="./about.html" class="text-xl font-bold">Inschrijven</a>
+        <a href="./courses.html" class="text-xl font-light">Cursussen</a>
+        <a href="./Incompany.html" class="text-xl font-light">In company</a>
+        <a href="./location.html" class="text-xl font-light">Leslocatie</a>
+        <a href="./news.html" class="text-xl font-light">Nieuws</a>
+        <a href="./about.html" class="text-xl font-light">Inschrijven</a>
       </nav>
 
       <!-- Mobile Toggle + Icons -->
@@ -76,11 +79,11 @@
       <button id="menuClose" class="text-gray-800 text-4xl">&times;</button>
     </div>
     <ul class="mt-10 space-y-4 text-gray-800 mb-10">
-      <li><a href="./courses.html" class="text-xl font-bold">Cursussen</a></li>
-      <li><a href="./Incompany.html" class="text-xl font-bold">In company</a></li>
-      <li><a href="./location.html" class="text-xl font-bold">Leslocatie</a></li>
-      <li> <a href="./news.html" class="text-xl font-bold">Nieuws</a></li>
-      <li> <a href="./about.html" class="text-xl font-bold">Inschrijven</a></li>
+      <li><a href="./courses.html" class="text-xl font-light">Cursussen</a></li>
+      <li><a href="./Incompany.html" class="text-xl font-light">In company</a></li>
+      <li><a href="./location.html" class="text-xl font-light">Leslocatie</a></li>
+      <li> <a href="./news.html" class="text-xl font-light">Nieuws</a></li>
+      <li> <a href="./about.html" class="text-xl font-light">Inschrijven</a></li>
     </ul>
     <hr>
     <ul class="mt-10 space-y-4 text-gray-800">
@@ -160,10 +163,10 @@
           </ul>
           <!-- Pricing Section -->
 
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 tabs mb-3 md:mb-0">
+          <div class="flex gap-4 overflow-x-auto mt-8 tabs mb-3 md:mb-0 scroll-smooth scrollbar-visible">
             <!-- Card 1 -->
             <div id="card-1"
-              class="bg-gray-100 rounded-tr-2xl rounded-tl-lg rounded-bl-lg border border-gray-800 cursor-pointer relative mb-1 md:mb-5 z-1"
+              class="min-w-[220px] bg-gray-100 rounded-tr-2xl rounded-tl-lg rounded-bl-lg border border-gray-800 cursor-pointer relative mb-1 md:mb-5 z-1"
               onclick="activateCard('card-1')">
               <div class="px-4 pt-4">
                 <div class="flex justify-between mb-4">
@@ -197,7 +200,7 @@
 
             <!-- Card 2 -->
             <div id="card-2"
-              class="bg-gray-100 rounded-tr-2xl rounded-tl-lg rounded-bl-lg border border-gray-800 cursor-pointer relative mb-1 md:mb-5 z-1"
+              class="min-w-[220px] bg-gray-100 rounded-tr-2xl rounded-tl-lg rounded-bl-lg border border-gray-800 cursor-pointer relative mb-1 md:mb-5 z-1"
               onclick="activateCard('card-2')">
               <div class="px-4 pt-4">
                 <div class="flex justify-between mb-4">
@@ -231,8 +234,40 @@
 
             <!-- Card 3 -->
             <div id="card-3"
-              class="bg-gray-100 rounded-tr-2xl rounded-tl-lg rounded-bl-lg border border-gray-800 cursor-pointer relative mb-1 md:mb-5 z-1"
+              class="min-w-[220px] bg-gray-100 rounded-tr-2xl rounded-tl-lg rounded-bl-lg border border-gray-800 cursor-pointer relative mb-1 md:mb-5 z-1"
               onclick="activateCard('card-3')">
+              <div class="px-4 pt-4">
+                <div class="flex justify-between mb-4">
+                  <p class="text-xxs md:text-sm font-bold text-gray-800">28 september 2025</p>
+                  <p class="text-xxs md:text-sm font-bold text-gray-800">Utrecht</p>
+                </div>
+                <p class="text-xl md:text-3xl font-bold text-gray-800 mb-4">€ 2725</p>
+              </div>
+              <a type="button"
+                class="flex items-center justify-center text-white bg-primary px-4 py-1 rounded-tr-2xl text-xs md:text-lg w-fit mb-2">
+                Inschrijven
+                <svg class="text-white ml-3 md:w-auto w-5 h-6 md:h-auto" width="33" height="32" viewBox="0 0 38 38"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 19h28" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M22 27l8-8-8-8" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <div class="px-4 pb-2">
+                <a class="text-xxs md:text-sm font-light text-gray-800 no-underline flex items-center">
+                  Praktische cursusinformatie
+                  <svg class="text-gray-800 md:w-auto w-5 h-6 md:h-auto" id="arrow-svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 6L15 12L9 18" stroke="black" stroke-width="1" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div id="card-4"
+              class="min-w-[220px] bg-gray-100 rounded-tr-2xl rounded-tl-lg rounded-bl-lg border border-gray-800 cursor-pointer relative mb-1 md:mb-5 z-1"
+              onclick="activateCard('card-4')">
               <div class="px-4 pt-4">
                 <div class="flex justify-between mb-4">
                   <p class="text-xxs md:text-sm font-bold text-gray-800">28 september 2025</p>
@@ -345,14 +380,13 @@
                   <li class="flex items-center">
                     <img src="./assets/images/courses/teacher-1.png" alt="Instructor" class=" mr-4">
                     <div>
-                      <div class="flex items-center">
-                        <p class="text-gray-800 font-bold text-xl">Hoofddocent CGT</p>
+                      <a href="#" class="text-gray-800 font-bold text-xl flex items-center">Hoofddocent CGT
                         <svg class="text-gray-800" width="24" height="24" viewBox="0 0 24 24" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path d="M9 6L15 12L9 18" stroke="black" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                         </svg>
-                      </div>
+                      </a>
                       <p class="text-gray-800 text-base">Hoofddocent CGT</p>
                     </div>
 
@@ -360,14 +394,13 @@
                   <li class="flex items-center">
                     <img src="./assets/images/courses/teacher-2.png" alt="Instructor" class=" mr-4">
                     <div>
-                      <div class="flex items-center">
-                        <p class="text-gray-800 font-bold text-xl">Erik Jongman</p>
+                      <a href="#" class="text-gray-800 font-bold text-xl flex items-center">Erik Jongman
                         <svg class="text-gray-800" width="24" height="24" viewBox="0 0 24 24" fill="none"
                           xmlns="http://www.w3.org/2000/svg">
                           <path d="M9 6L15 12L9 18" stroke="black" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                         </svg>
-                      </div>
+                      </a>
                       <p class="text-gray-800 text-base">Docent vervolgcursus CGt:<br>
                         adolescentie</p>
                     </div>
@@ -629,6 +662,56 @@
                 <img src="./assets/images/courses/lunch.png" alt="Lunch" class="object-cover">
               </div>
             </div>
+
+            <div id="content-card-4" class="tab-content bg-gray-100 border border-gray-800">
+              <!-- Card Header -->
+              <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Alle lesdagen</h3>
+                <table class="min-w-full text-base font-normal">
+                  <tbody>
+                    <tr>
+                      <td>28-09-2025</td>
+                      <td>09:00 - 16:30</td>
+                      <td>Onderwerp van de dag</td>
+                      <td class="py-2">Utrecht</td>
+                    </tr>
+                    <tr>
+                      <td>28-09-2025</td>
+                      <td>09:00 - 16:30</td>
+                      <td>Onderwerp van de dag</td>
+                      <td class="py-2">Utrecht</td>
+                    </tr>
+                    <tr>
+                      <td>28-09-2025</td>
+                      <td>09:00 - 16:30</td>
+                      <td>Onderwerp van de dag</td>
+                      <td class="py-2">Utrecht</td>
+                    </tr>
+                    <tr>
+                      <td>28-09-2025</td>
+                      <td>09:00 - 16:30</td>
+                      <td>Onderwerp van de dag</td>
+                      <td class="py-2">Utrecht</td>
+                    </tr>
+                    <tr>
+                      <td>28-09-2025</td>
+                      <td>09:00 - 16:30</td>
+                      <td>Onderwerp van de dag</td>
+                      <td class="py-2">Utrecht</td>
+                    </tr>
+                    <tr>
+                      <td>28-09-2025</td>
+                      <td>09:00 - 16:30</td>
+                      <td>Onderwerp van de dag</td>
+                      <td class="py-2">Utrecht</td>
+                    </tr>
+                    <!-- Repeat rows as needed -->
+                  </tbody>
+                </table>
+
+                <img src="./assets/images/courses/lunch.png" alt="Lunch" class="object-cover">
+              </div>
+            </div>
           </div>
 
           <!-- Course Content -->
@@ -675,7 +758,7 @@
             <li>Ontwerpen van behandelplannen op basis van cognitief gedragstherapeutische diagnostiek.</li>
           </ul>
 
-          <h2 class="text-xl md:text-3xl font-bold  my-8">Leerdoelen</h2>
+          <h2 class="text-xl md:text-3xl font-bold  my-8 text-gray-800">Leerdoelen</h2>
           <ul class="list-disc pl-5 text-gray-800 text-base md:text-xl font-normal space-y-2 mb-6 md:ml-4">
             <li>Basis competenties van de cognitief gedragstherapeut met betrekking tot kennis en vaardigheden</li>
             <li>Basiskennis over de leertheorieën, de geschiedenis van de gedragstherapie en het gedragstherapeutisch
@@ -786,7 +869,7 @@
             <br /><br />
             Onder andere een eindopdracht in de vorm van een casusbeschrijving.
           </p>
-          <h2 class="text-xl md:text-3xl  font-bold my-6">Zelf aan te schaffen literatuur</h2>
+          <h2 class="text-xl md:text-3xl  font-bold my-6 text-gray-800">Zelf aan te schaffen literatuur</h2>
           <ul class="list-disc pl-5 text-gray-800 text-base md:text-xl font-normal space-y-2 mb-6 md:ml-4">
             <li>J.M. Cladder, M.W.D. Nijhoff-Huijsse, G.A.L.A. Mulder: Cognitieve gedragstherapie met kinderen en
               jeugdigen -oplossingsgericht, protocollair en specialistisch- 8e editie 1e druk oktober 2019 ISBN
@@ -806,7 +889,7 @@
               9789089537140</li>
           </ul>
 
-          <h2 class="text-xl md:text-3xl  font-bold my-6">Toelatingseisen basiscursus CGt</h2>
+          <h2 class="text-xl md:text-3xl  font-bold my-6 text-gray-800">Toelatingseisen basiscursus CGt</h2>
           <p class="text-gray-800 text-xl font-normal">Master psychologie of orthopedagogiek</p>
         </div>
 
@@ -828,21 +911,24 @@
           <div class="space-y-4">
             <div class="bg-gray-100 rounded-t-lg ">
               <div class="relative">
-                <img src="./assets/images/courses/course-image.png" alt="Course Image"
-                  class="w-full object-cover bg-gray-100 ">
+                <a href="#">
+                  <img src="./assets/images/courses/course-image.png" alt="Course Image"
+                    class="w-full object-cover bg-gray-100 ">
+                </a>
                 <a href="#"
-                  class="text-white bg-primary px-8 py-2 rounded-tl-md rounded-tr-2xl rounded-bl-md   text-xl font-bold md:font-normal md:text-lg w-fit absolute top-6 left-6 z-1">
+                  class="text-white bg-primary px-4 pr-8 py-1 rounded-tl-md rounded-tr-2xl rounded-bl-md   text-xl font-bold md:text-lg w-fit absolute top-6 left-6 z-1">
                   Verdiepingscursus
                 </a>
               </div>
-              <div class="p-4">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">(Gehechtheid) trauma en huiselijk
-                  geweld </h3>
+              <div class="p-4 flex flex-col">
+                <a href="#" class="text-xl font-bold text-gray-800 mb-2">(Gehechtheid) trauma en huiselijk
+                  geweld </a>
                 <p class="text-gray-800 leading-7 text-base mb-4">
                   In deze training worden kennis en vaardigheden op het gebied van gehechtheid en trauma vertaald naar
                   het werken bij Veilig Thuis.
                 </p>
                 <div class="flex mt-0.5 gap-2 items-center">
+                  <span class="text-gray-800 text-base">(4.8)</span>
                   <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -888,20 +974,23 @@
             </div>
             <div class="bg-gray-100 rounded-t-lg ">
               <div class="relative">
-                <img src="./assets/images/courses/course-image.png" alt="Course Image"
-                  class="w-full object-cover bg-gray-100 ">
+                <a href="#">
+                  <img src="./assets/images/courses/course-image.png" alt="Course Image"
+                    class="w-full object-cover bg-gray-100 ">
+                </a>
                 <a href="#"
-                  class="text-white bg-gray-800 px-8 py-2 rounded-tl-md rounded-tr-2xl rounded-bl-md   text-xl font-bold md:font-normal md:text-lg w-fit absolute top-6 left-6 z-1">
+                  class="text-white bg-gray-800 px-4 pr-8 py-1 rounded-tl-md rounded-tr-2xl rounded-bl-md   text-xl font-bold md:text-lg w-fit absolute top-6 left-6 z-1">
                   Basisopleiding NIKA
                 </a>
               </div>
-              <div class="p-4">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Traumasensitief werken bij Veilig Thuis</h3>
+              <div class="p-4 flex flex-col">
+                <a href="#" class="text-xl font-bold text-gray-800 mb-2">Traumasensitief werken bij Veilig Thuis</a>
                 <p class="text-gray-800 leading-7 text-base mb-4">
                   In deze training worden kennis en vaardigheden op het gebied van gehechtheid en trauma vertaald naar
                   het werken bij Veilig Thuis.
                 </p>
                 <div class="flex mt-0.5 gap-2 items-center">
+                  <span class="text-gray-800 text-base">(4.8)</span>
                   <svg width="19" height="16" class="text-primary" viewBox="0 0 23 21" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -957,7 +1046,7 @@
       <!-- Left Section -->
       <div class="text-sm">
         <a href="./index.html">
-          <img src="./assets/images/footer/logo.png" alt="Logo" class="mb-4">
+          <img src="./assets/images/footer/logo.svg" alt="Logo" class="mb-4">
         </a>
         <p>De Jeugdzorgacademie</p>
         <p>Grebbeberglaan 15, 3527 VX Utrecht</p>
