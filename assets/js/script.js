@@ -25,7 +25,7 @@ function activateCard(cardId) {
     document.querySelectorAll(".tabs > div").forEach((card) => {
         card.classList.remove("border-b-0");
         card.classList.add("mb-5");
-        card.classList.add("mb-1");
+        // card.classList.add("mb-1");
         card.classList.add("rounded-bl-lg");
         const svg = card.querySelector("a #arrow-svg");
         if (svg) {
@@ -37,7 +37,7 @@ function activateCard(cardId) {
     const activeCard = document.getElementById(cardId);
     activeCard.classList.add("border-b-0");
     activeCard.classList.remove("mb-5");
-    activeCard.classList.remove("mb-1");
+    // activeCard.classList.remove("mb-1");
     activeCard.classList.remove("rounded-bl-lg");
 
     activeCard.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
