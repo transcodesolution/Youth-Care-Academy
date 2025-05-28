@@ -97,18 +97,39 @@
     <!-- Content -->
     <div class="relative">
       <div class="container mx-auto">
-        <div
-          class="flex flex-col fixed bottom-0 z-20 w-full md:absolute md:-bottom-20 bg-primary  text-white p-6 rounded-tl-2xl rounded-tr-4xl md:rounded-br-2xl shadow-lg md:max-w-sm md:w-[min(90%,589px)] left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none">
+        <div id="filterBar"
+          class="flex flex-col fixed bottom-0 z-20 w-full md:absolute md:-bottom-20 bg-primary text-white p-6 rounded-tl-2xl rounded-tr-4xl md:rounded-br-2xl shadow-lg md:max-w-sm md:w-[min(90%,589px)] left-1/2 transform -translate-x-1/2 md:left-auto md:transform-none">
+
           <h2 class="text-xl md:text-3xl font-medium mb-4 md:mb-8 italic text-tuna">Cursusoverzicht (256)</h2>
-          <a class="mb-4 text-xs md:text-base">Klik om te filteren:</a>
-          <ul class="space-y-2 text-base md:text-xl">
-            <li><a href="#">Gehechtheid en trauma</a></li>
-            <li><a href="#">Cognitieve gedragstherapie (CGT)</a></li>
-            <li><a href="#">Systeemtherapie</a></li>
-            <li><a href="#">Handelingsgerichte Diagnostiek</a></li>
-            <li><a href="#">Coaching & supervisoren</a></li>
-            <li><a href="#">Juridisch en ethiek</a></li>
-          </ul>
+
+          <!-- Mobile: Filter button -->
+          <div id="defaultFilterButton" class="mt-2 block md:hidden">
+            <button onclick="toggleFilterPanel()"
+              class="text-white border-white border px-6 py-2 text-sm rounded-md font-semibold">Filter op
+              categorie</button>
+          </div>
+
+          <!-- Filter options panel (mobile only) -->
+          <div id="filterOptions" class="hidden mt-4 md:hidden">
+            <a id="filterInstruction" class="mb-4 text-xs md:text-base block">Selecteer een categorie</a>
+            <ul id="filterListMobile" class="space-y-2 text-base md:text-xl"></ul>
+            <button onclick="applyFilters()"
+              class="text-white border-white border px-10 py-2 rounded-md font-semibold mt-4 text-sm">Toepassen</button>
+          </div>
+
+          <!-- Desktop: Always show category list -->
+          <div id="filterListDesktopWrapper" class="hidden md:block">
+            <a class="mb-4 text-xs md:text-base block">Klik om te filteren:</a>
+            <ul id="filterListDesktop" class="space-y-2 text-base md:text-xl"></ul>
+            <button onclick="applyFilters()"
+              class="text-white border-white border px-10 py-2 rounded-md font-semibold mt-4 text-sm block md:hidden">Toepassen</button>
+          </div>
+
+          <!-- Selected filters display -->
+          <div id="selectedFilters" class="hidden mt-4">
+            <p class="text-sm mb-2">Klik om te filteren:</p>
+            <ul id="selectedList" class="space-y-2 text-base md:text-xl"></ul>
+          </div>
         </div>
       </div>
     </div>
